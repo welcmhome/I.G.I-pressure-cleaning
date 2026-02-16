@@ -4,36 +4,43 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 
+const localImages = [
+  '/assets/IMAGE%201.jpeg',
+  '/assets/IMAGE%202.png',
+  '/assets/IMAGE%203.jpg',
+  '/assets/IMAGE%204.JPG',
+]
+
 const services = [
   {
     name: 'Ant Control',
     description: 'Targeted elimination of ant trails and nests. Safe treatments that keep them from coming back.',
-    image: 'https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?q=80&w=800&auto=format&fit=crop',
+    image: localImages[0],
   },
   {
     name: 'Roach Treatment',
     description: 'Full treatment for roaches in kitchens, bathrooms, and hidden areas. Follow-up included.',
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop',
+    image: localImages[1],
   },
   {
     name: 'Rodent Control',
     description: 'Exclusion, trapping, and cleanup. We seal entry points and prevent reinfestation.',
-    image: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=800&auto=format&fit=crop',
+    image: localImages[2],
   },
   {
     name: 'Termite Protection',
     description: 'Inspection and treatment to protect your property from termite damage.',
-    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=800&auto=format&fit=crop',
+    image: localImages[3],
   },
   {
     name: 'Spider Control',
     description: 'Indoor and perimeter treatment to reduce spiders and their prey.',
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop',
+    image: localImages[0],
   },
   {
     name: 'Bed Bug Treatment',
     description: 'Thorough bed bug elimination with heat and chemical options. We don’t leave until they’re gone.',
-    image: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=800&auto=format&fit=crop',
+    image: localImages[1],
   },
 ]
 

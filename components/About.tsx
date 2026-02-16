@@ -19,7 +19,7 @@ export default function About() {
             className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-gray-200"
           >
             <img
-              src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop"
+              src="/assets/IMAGE%203.jpg"
               alt="Pest control technician at work"
               className="w-full h-full object-cover"
             />

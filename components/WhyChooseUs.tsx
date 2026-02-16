@@ -63,7 +63,7 @@ export default function WhyChooseUs() {
             className="relative aspect-[4/3] rounded-2xl overflow-hidden border-2 border-gray-900/20"
           >
             <img
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1000&auto=format&fit=crop"
+              src="/assets/IMAGE%204.JPG"
               alt="Pest control technician at residential property"
               className="w-full h-full object-cover"
             />
