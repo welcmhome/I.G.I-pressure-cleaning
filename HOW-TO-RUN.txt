@@ -1,0 +1,46 @@
+HOW TO SEE THE SITE ON YOUR COMPUTER
+=====================================
+
+DO THIS (in order):
+
+1. Double-click: RUN-FIRST.command
+   (It's in this same folder: "Pest Control site")
+
+2. If Mac says "cannot be opened because it is from an unidentified developer":
+   - Right-click RUN-FIRST.command
+   - Click "Open"
+   - Click "Open" again in the dialog
+
+3. A black Terminal window will open. Wait until you see:
+   "SERVER IS RUNNING" and "Site URL: http://localhost:3006"
+
+4. Your browser should open by itself. If it doesn't:
+   - Open Chrome or Safari
+   - Type in the address bar: localhost:3006
+   - Press Enter
+
+5. KEEP THE TERMINAL WINDOW OPEN the whole time you're viewing the site.
+   If you close it, the site will stop loading.
+
+6. When you're done: close the Terminal window or press Ctrl+C in it.
+
+
+IF IT STILL DOESN'T WORK
+------------------------
+
+A. Make sure Node.js is installed:
+   - Open Terminal (Spotlight: type "Terminal", press Enter)
+   - Type: node -v
+   - Press Enter
+   - You should see something like v18 or v20. If you see "command not found", install Node from https://nodejs.org
+
+B. Run the steps manually in Terminal:
+   1. cd "/Volumes/Extreme SSD/Pest Control site"
+   2. npm install
+   3. npm run dev
+   4. Wait for "Ready" and "Local: http://localhost:3006"
+   5. Open your browser and go to: http://localhost:3006
+   6. Keep the Terminal window open
+
+C. If you see "Port 3006 is in use":
+   - Something else is using that port. Close other apps or restart your Mac, then try again.

@@ -1,0 +1,27 @@
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+
+const inter = Inter({ 
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+export const metadata: Metadata = {
+  title: 'In & Out Florida Pest Control | South Florida Pest Experts',
+  description: 'Professional pest control services in Boca Raton, Fort Lauderdale, Coral Springs and surrounding South Florida areas.',
+  keywords: 'pest control, Boca Raton, Fort Lauderdale, Coral Springs, South Florida, pest removal, termite control, rodent control',
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en" className={inter.variable}>
+      <body>{children}</body>
+    </html>
+  )
+}
