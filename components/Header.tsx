@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
@@ -31,15 +31,19 @@ export default function Header() {
 
   return (
     <>
-      {isMobileMenuOpen && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          onClick={() => setIsMobileMenuOpen(false)}
-          className="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 lg:hidden"
-        />
-      )}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[45] lg:hidden"
+            aria-hidden="true"
+          />
+        )}
+      </AnimatePresence>
 
       <motion.header
         initial={{ y: -100 }}
@@ -51,7 +55,7 @@ export default function Header() {
       >
         <nav className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="flex items-center justify-between h-20 sm:h-24">
-            <Link href="/" className="flex items-center gap-3 group">
+            <Link href="/" className="flex items-center gap-3 group shrink-0 min-w-0">
               <div className="relative w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0">
                 <img
                   src="/assets/LOGO%20PEST%20CONTROL.png"
@@ -90,8 +94,9 @@ export default function Header() {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden text-gray-800 p-2 z-50"
-              aria-label="Menu"
+              className="lg:hidden shrink-0 p-3 -mr-2 text-gray-800 hover:bg-gray-100 rounded-lg transition-colors"
+              aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={isMobileMenuOpen}
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {isMobileMenuOpen ? (
@@ -103,37 +108,50 @@ export default function Header() {
             </button>
           </div>
 
-          {isMobileMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="lg:hidden pb-6 border-t border-gray-200 mt-4 relative z-50 bg-white"
-            >
-              <div className="flex flex-col gap-1 pt-4">
-                {navLinks.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    onClick={(e) => {
-                      e.preventDefault()
-                      setIsMobileMenuOpen(false)
-                      const el = document.querySelector(link.href)
-                      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                    }}
-                    className="py-3 px-2 text-gray-800 hover:text-primary-blue font-medium transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                ))}
-                <a
-                  href="tel:9542134572"
-                  className="mt-3 py-3 bg-primary-blue text-white font-bold rounded-xl text-center hover:bg-primary-blue-dark"
-                >
-                  Call (954) 213-4572
-                </a>
-              </div>
-            </motion.div>
-          )}
+          <AnimatePresence>
+            {isMobileMenuOpen && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.25, ease: 'easeInOut' }}
+                className="lg:hidden overflow-hidden"
+              >
+                <div className="bg-gray-50 border-t border-gray-200 px-4 pb-6 pt-4">
+                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider px-2 mb-2">Menu</p>
+                  <ul className="space-y-0.5">
+                    {navLinks.map((link) => (
+                      <li key={link.href}>
+                        <a
+                          href={link.href}
+                          onClick={(e) => {
+                            e.preventDefault()
+                            setIsMobileMenuOpen(false)
+                            const el = document.querySelector(link.href)
+                            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                          }}
+                          className="block py-3.5 px-4 text-gray-900 font-medium rounded-lg hover:bg-white hover:text-primary-blue transition-colors"
+                        >
+                          {link.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-4 pt-4 border-t border-gray-200">
+                    <a
+                      href="tel:9542134572"
+                      className="flex items-center justify-center gap-2 w-full py-4 bg-primary-blue text-white font-bold rounded-xl hover:bg-primary-blue-dark transition-colors"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      Call (954) 213-4572
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </nav>
       </motion.header>
     </>
