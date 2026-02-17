@@ -237,7 +237,7 @@ export default function Header() {
                   const el = document.querySelector('#contact')
                   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
                 }}
-                className="px-5 py-2.5 font-bold rounded-none text-sm bg-primary-blue text-white hover:bg-primary-blue-dark transition-colors"
+                className="px-5 py-2.5 font-bold rounded-none text-sm bg-gray-900 text-white hover:bg-black transition-colors"
               >
                 Get a quote
               </a>

@@ -32,7 +32,7 @@ export default function Home() {
       {/* Fixed Get a quote bar — mobile, bottom */}
       <a
         href="#contact"
-        className="fixed bottom-0 left-0 right-0 z-40 lg:hidden flex items-center justify-center w-full bg-primary-blue text-white font-bold text-sm uppercase tracking-wide py-4 px-4 hover:bg-primary-blue-dark active:opacity-90 transition-colors"
+        className="fixed bottom-0 left-0 right-0 z-40 lg:hidden flex items-center justify-center w-full bg-gray-900 text-white font-bold text-sm uppercase tracking-wide py-4 px-4 hover:bg-black active:opacity-90 transition-colors"
         style={{ paddingBottom: 'max(1rem, env(safe-area-inset-bottom))' }}
       >
         Get a quote

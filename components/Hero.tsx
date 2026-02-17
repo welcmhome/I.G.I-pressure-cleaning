@@ -3,7 +3,11 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const ROTATING_PHRASES = ['Done right.', 'Your property.', 'Satisfaction.']
+const ROTATING_PHRASES = [
+  { text: 'Done right.', color: 'text-primary-blue lg:text-primary-blue-light' },
+  { text: 'Your property.', color: 'text-accent-orange lg:text-accent-orange' },
+  { text: 'Satisfaction.', color: 'text-accent-yellow lg:text-accent-yellow' },
+]
 
 const heroReviewSnippets = [
   { name: 'Maria R.', location: 'Boynton Beach', quote: 'Best landscaping company in the area. Quality work and fair pricing.' },
@@ -74,9 +78,9 @@ export default function Hero() {
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -24, opacity: 0 }}
                   transition={{ duration: 0.35 }}
-                  className="block text-primary-blue lg:text-primary-blue-light"
+                  className={`block ${ROTATING_PHRASES[phraseIndex].color}`}
                 >
-                  {ROTATING_PHRASES[phraseIndex]}
+                  {ROTATING_PHRASES[phraseIndex].text}
                 </motion.span>
               </AnimatePresence>
             </span>
@@ -86,7 +90,7 @@ export default function Hero() {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="origin-left mt-5 h-1 w-24 bg-primary-blue lg:bg-primary-blue-light"
+            className="origin-left mt-5 h-1 w-24 bg-gray-400 lg:bg-gray-300"
           />
 
           <motion.p
@@ -115,7 +119,7 @@ export default function Hero() {
             </a>
             <a
               href="#services"
-              className="inline-flex items-center text-gray-700 lg:text-gray-300 font-semibold text-sm border-b-2 border-transparent hover:border-primary-blue hover:text-primary-blue transition-colors"
+              className="inline-flex items-center text-gray-700 lg:text-gray-300 font-semibold text-sm border-b-2 border-transparent hover:border-gray-500 hover:text-gray-900 lg:hover:text-white transition-colors"
             >
               Our services →
             </a>
