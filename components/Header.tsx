@@ -13,11 +13,11 @@ const navLinks = [
   { href: '#contact', label: 'Contact', icon: 'M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z' },
 ]
 
-/** Top bar above main nav — change for other companies (pest control, service area, etc.) */
+/** Top bar above main nav */
 const topBarConfig = {
-  serviceLabel: 'South Florida',       // e.g. "South Florida", "Boca Raton & Fort Lauderdale", or "33197 Orlando, FL"
-  phoneNumber: '9542134572',
-  phoneDisplay: '(954) 213-4572',
+  serviceLabel: 'Boynton Beach & South Florida',
+  phoneNumber: '5611234567',
+  phoneDisplay: '(561) 123-4567',
   showPhone: true,
 }
 
@@ -148,10 +148,10 @@ export default function Header() {
                 className="p-6 pt-4 border-t border-gray-100"
               >
                 <a
-                  href="tel:9542134572"
+                  href="tel:5611234567"
                   className="flex items-center justify-center w-full py-4 px-5 bg-gray-900 text-white font-bold rounded-none hover:bg-black active:scale-[0.98] transition-all shadow-lg shadow-gray-900/25"
                 >
-                  Call (954) 213-4572
+                  Call (561) 123-4567
                 </a>
               </motion.div>
             </motion.div>
@@ -200,11 +200,11 @@ export default function Header() {
         >
           <div className="relative flex items-center justify-between h-20 sm:h-24">
             {/* Desktop: logo left */}
-            <Link href="/" className="hidden lg:flex items-center shrink-0" aria-label="In & Out Florida Pest Control">
+            <Link href="/" className="hidden lg:flex items-center shrink-0" aria-label="Boynton Beach Landscaping LLC">
               <div className="relative w-14 h-14 sm:w-16 sm:h-16 flex-shrink-0">
                 <img
-                  src="/assets/LOGO%20PEST%20CONTROL.png"
-                  alt="In & Out Florida Pest Control"
+                  src="/assets/BOYNTON%20BEACH%20LANDSCAPING%20LOGO.PNG"
+                  alt="Boynton Beach Landscaping LLC"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -250,11 +250,11 @@ export default function Header() {
             <Link
               href="/"
               className="lg:hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 flex-shrink-0"
-              aria-label="In & Out Florida Pest Control"
+              aria-label="Boynton Beach Landscaping LLC"
             >
               <img
-                src="/assets/LOGO%20PEST%20CONTROL.png"
-                alt=""
+                src="/assets/BOYNTON%20BEACH%20LANDSCAPING%20LOGO.PNG"
+                alt="Boynton Beach Landscaping LLC"
                 className="w-full h-full object-contain"
               />
             </Link>
@@ -262,7 +262,7 @@ export default function Header() {
             {/* Mobile: phone icon + hamburger right (Orkin-style) */}
             <div className="flex lg:hidden items-center gap-1 flex-1 justify-end">
               <a
-                href="tel:9542134572"
+                href="tel:5611234567"
                 className="p-3 text-gray-900 hover:bg-gray-100 active:opacity-80 transition-all"
                 aria-label="Call"
               >

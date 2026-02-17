@@ -5,42 +5,44 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 
 const localImages = [
-  '/assets/IMAGE%201.jpeg',
-  '/assets/IMAGE%202.png',
-  '/assets/IMAGE%203.jpg',
-  '/assets/hero-pest-control.png',
+  'https://images.unsplash.com/photo-1558904541-efa84396f2eb?w=800&q=80',   // garden/design
+  'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80', // lawn
+  'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80', // planting
+  'https://images.unsplash.com/photo-1598902108854-10e335adac99?w=800&q=80', // trees
+  'https://images.unsplash.com/photo-1592419044706-39796d40f98c?w=800&q=80', // irrigation/water
+  'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80', // commercial/property
 ]
 
 const services = [
   {
-    name: 'Ant Control',
-    description: 'Targeted elimination of ant trails and nests. Safe treatments that keep them from coming back.',
+    name: 'Landscaping Design & Installation',
+    description: 'Full landscape design and installation. We transform your property with quality plants, hardscape, and attention to detail.',
     image: localImages[0],
   },
   {
-    name: 'Roach Treatment',
-    description: 'Full treatment for roaches in kitchens, bathrooms, and hidden areas. Follow-up included.',
+    name: 'Lawn Care & Maintenance',
+    description: 'Regular mowing, edging, and upkeep to keep your lawn healthy and looking its best year-round.',
     image: localImages[1],
   },
   {
-    name: 'Rodent Control',
-    description: 'Exclusion, trapping, and cleanup. We seal entry points and prevent reinfestation.',
+    name: 'Garden & Planting',
+    description: 'Professional planting, mulching, and garden beds. We treat your property as if it were our own.',
     image: localImages[2],
   },
   {
-    name: 'Termite Protection',
-    description: 'Inspection and treatment to protect your property from termite damage.',
+    name: 'Tree & Shrub Care',
+    description: 'Trimming, pruning, and care for trees and shrubs. Safety and efficiency are our top priorities.',
     image: localImages[3],
   },
   {
-    name: 'Spider Control',
-    description: 'Indoor and perimeter treatment to reduce spiders and their prey.',
-    image: localImages[0],
+    name: 'Irrigation & Watering',
+    description: 'Efficient irrigation design and repair so your landscape stays healthy with minimal waste.',
+    image: localImages[4],
   },
   {
-    name: 'Bed Bug Treatment',
-    description: 'Thorough bed bug elimination with heat and chemical options. We don’t leave until they’re gone.',
-    image: localImages[1],
+    name: 'Commercial Landscaping',
+    description: 'Commercial properties, HOAs, and businesses. We deliver consistent quality and lasting results.',
+    image: localImages[5],
   },
 ]
 
@@ -58,7 +60,7 @@ export default function Services() {
             transition={{ duration: 0.5 }}
             className="text-gray-900 font-semibold text-sm uppercase tracking-wider"
           >
-            What we treat
+            What we offer
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 12 }}
@@ -66,7 +68,7 @@ export default function Services() {
             transition={{ duration: 0.5 }}
             className="text-3xl sm:text-4xl font-bold text-gray-900 mt-1"
           >
-            Pest elimination & prevention
+            Landscaping & gardening services
           </motion.h2>
         </div>
 

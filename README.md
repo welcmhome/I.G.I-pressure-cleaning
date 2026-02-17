@@ -1,6 +1,6 @@
-# In & Out Florida Pest Control Website
+# Boynton Beach Landscaping LLC Website
 
-A modern, minimal, high-end website for In & Out Florida Pest Control built with Next.js, Tailwind CSS, and Framer Motion.
+A modern, minimal, high-end website for Boynton Beach Landscaping LLC built with Next.js, Tailwind CSS, and Framer Motion.
 
 ## Features
 
@@ -28,11 +28,10 @@ npm install
 
 2. Run the development server:
 ```bash
-cd "/Volumes/Extreme SSD/Pest Control site"
 npm run dev
 ```
 
-3. Open **http://localhost:3006** in your browser.
+3. Open **http://localhost:3000** in your browser.
 
    **Mac shortcut:** Double‑click **START-SERVER-AND-OPEN-SITE.command** in this folder to start the server and open the browser.
 
@@ -49,6 +48,7 @@ npm run dev
 │   ├── WhyChooseUs.tsx   # Why Choose Us section
 │   ├── ServiceAreas.tsx  # Service areas section
 │   ├── About.tsx         # About section
+│   ├── Reviews.tsx       # Google reviews section
 │   ├── CTA.tsx           # Call to action section
 │   ├── Contact.tsx       # Contact form
 │   ├── Footer.tsx        # Footer component
@@ -68,7 +68,7 @@ All content is defined within the component files. Edit the respective component
 
 ### Images
 
-Replace the placeholder image in `WhyChooseUs.tsx` with your actual image. You can use Next.js Image component for optimization.
+Replace images in `public/assets/` with your landscaping photos. Update paths in Hero, About, Services, and WhyChooseUs as needed.
 
 ## Build for Production
 
@@ -79,16 +79,12 @@ npm start
 
 ## Deploy to Vercel
 
-1. Push this project to a GitHub repo (if you haven’t already).
+1. Push this project to [GitHub](https://github.com/welcmhome/BoyntonBeachLandscapingLLC).
 2. Go to [vercel.com](https://vercel.com) and sign in with GitHub.
 3. Click **Add New…** → **Project** and import your repo.
 4. Leave the defaults (Framework: Next.js, Root: `.`) and click **Deploy**.
-5. When it finishes, Vercel gives you a live URL (e.g. `your-project.vercel.app`).
-
-No extra config is needed; Vercel detects Next.js and builds it.
+5. When it finishes, Vercel gives you a live URL.
 
 ## Contact Information
 
-- Phone: (954) 213-4572
-- Email: inoutfloridapestcontrol@gmail.com
-- Instagram: @inoutfloridapestcontrol
+Update phone, email, and social links in the component files (Header, Hero, Contact, Footer, CTA) with your actual contact details.

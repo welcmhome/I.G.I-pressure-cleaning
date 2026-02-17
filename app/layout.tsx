@@ -15,12 +15,12 @@ const oswald = Oswald({
 })
 
 export const metadata: Metadata = {
-  title: 'In & Out Florida Pest Control | South Florida Pest Experts',
-  description: 'Professional pest control services in Boca Raton, Fort Lauderdale, Coral Springs and surrounding South Florida areas.',
-  keywords: 'pest control, Boca Raton, Fort Lauderdale, Coral Springs, South Florida, pest removal, termite control, rodent control',
+  title: 'Boynton Beach Landscaping LLC | Quality Landscaping & Gardening',
+  description: 'Over 20 years of experience. Free estimates, high-quality work, and competitive pricing. Serving Boynton Beach and South Florida.',
+  keywords: 'landscaping, Boynton Beach, South Florida, gardening, lawn care, landscape design, yard maintenance',
   icons: {
-    icon: '/assets/LOGO%20PEST%20CONTROL.png',
-    apple: '/assets/LOGO%20PEST%20CONTROL.png',
+    icon: '/assets/BOYNTON%20BEACH%20LANDSCAPING%20LOGO.PNG',
+    apple: '/assets/BOYNTON%20BEACH%20LANDSCAPING%20LOGO.PNG',
   },
 }
 

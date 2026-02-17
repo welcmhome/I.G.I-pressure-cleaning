@@ -3,15 +3,13 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const ROTATING_PHRASES = ['Peace in.', 'Done right.', 'Solved.']
+const ROTATING_PHRASES = ['Done right.', 'Your property.', 'Satisfaction.']
 
 const heroReviewSnippets = [
-  { name: 'Maria R.', location: 'Boca Raton', quote: 'Very professional… explained everything in Spanish. Highly recommend.' },
-  { name: 'James T.', location: 'Fort Lauderdale', quote: 'Thorough treatment, followed up. Fair price and no pressure.' },
-  { name: 'Sandra L.', location: 'Coral Springs', quote: 'Yard and house have been pest-free. Friendly and always on schedule.' },
-  { name: 'David M.', location: 'Pembroke Pines', quote: 'Honest about what we needed. Work done fast, clear report.' },
-  { name: 'Carmen G.', location: 'Hollywood', quote: 'Only ones who could come the next day. Very respectful.' },
-  { name: 'Robert K.', location: 'Parkland', quote: 'No more spiders, quote very reasonable. Will use again.' },
+  { name: 'Maria R.', location: 'Boynton Beach', quote: 'Best landscaping company in the area. Quality work and fair pricing.' },
+  { name: 'James T.', location: 'Delray Beach', quote: 'Over 20 years of experience shows. Our yard has never looked better.' },
+  { name: 'Sandra L.', location: 'Boca Raton', quote: 'Free estimate, great attention to detail. Treated our property like their own.' },
+  { name: 'David M.', location: 'Lake Worth', quote: 'Honest, efficient, and built a lasting relationship. Highly recommend.' },
 ]
 
 export default function Hero() {
@@ -31,7 +29,7 @@ export default function Hero() {
         {/* Background image — desktop only; shifted right + slight zoom to show person */}
         <div className="absolute inset-0 z-0 hidden lg:block overflow-hidden">
           <img
-            src="/assets/hero-technician-palm.png"
+            src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&q=80"
             alt=""
             aria-hidden
             className="absolute inset-0 w-full h-full object-cover object-right scale-105"
@@ -57,8 +55,8 @@ export default function Hero() {
             transition={{ duration: 0.4 }}
             className="text-xs font-semibold text-gray-500 lg:text-gray-300 uppercase tracking-[0.2em] mb-4"
           >
-            <span className="lg:hidden">In & Out Pest Control</span>
-            <span className="hidden lg:inline">South Florida</span>
+            <span className="lg:hidden">Boynton Beach Landscaping LLC</span>
+            <span className="hidden lg:inline">Boynton Beach & South Florida</span>
           </motion.p>
 
           <motion.h1
@@ -67,7 +65,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.06 }}
             className="font-oswald text-6xl sm:text-7xl lg:text-6xl xl:text-7xl font-bold text-gray-900 lg:text-white leading-[1.05] uppercase tracking-tight"
           >
-            Pests out.<br />
+            Landscaping<br />
             <span className="inline-block overflow-hidden h-[1.05em] leading-none align-top min-w-[14ch] sm:min-w-[16ch]">
               <AnimatePresence mode="wait">
                 <motion.span
@@ -97,7 +95,7 @@ export default function Hero() {
             transition={{ duration: 0.4, delay: 0.25 }}
             className="hidden lg:block mt-6 text-base sm:text-lg text-gray-600 lg:text-gray-300 max-w-sm"
           >
-            In & Out Florida Pest Control — licensed, same-day, bilingual. Free estimates.
+            Over 20 years of experience. Free estimates, quality work, and competitive pricing.
           </motion.p>
 
           <motion.div
@@ -107,7 +105,7 @@ export default function Hero() {
             className="mt-auto lg:mt-8 flex flex-wrap items-center gap-4"
           >
             <a
-              href="tel:9542134572"
+              href="tel:5611234567"
               className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gray-900 lg:bg-white lg:text-gray-900 text-white font-bold rounded-none text-base hover:bg-black lg:hover:bg-gray-100 transition-colors"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,8 +125,8 @@ export default function Hero() {
         {/* Mobile only: image below content — modest size, with dark overlay */}
         <div className="lg:hidden relative w-full h-[40vh] min-h-[220px] flex-shrink-0 overflow-hidden">
           <img
-            src="/assets/hero-technician-palm.png"
-            alt="In & Out Florida Pest Control technician with company truck"
+            src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&q=80"
+            alt="Boynton Beach Landscaping LLC — quality landscaping and gardening"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-black/40 pointer-events-none" />
@@ -167,9 +165,9 @@ export default function Hero() {
             </svg>
             Licensed & Insured
           </span>
-          <span>Same-day service</span>
           <span>Free estimates</span>
-          <span>Bilingual EN / ES</span>
+          <span>20+ years experience</span>
+          <span>Residential & Commercial</span>
           <span className="font-bold">5.0 Google</span>
         </div>
       </div>

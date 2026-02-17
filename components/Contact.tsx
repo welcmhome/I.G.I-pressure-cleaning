@@ -18,11 +18,11 @@ export default function Contact() {
     e.preventDefault()
     // Form submission logic would go here
     // For now, we'll use mailto as a fallback
-    const subject = encodeURIComponent('Service Request from Website')
+    const subject = encodeURIComponent('Landscaping Quote Request from Website')
     const body = encodeURIComponent(
       `Name: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     )
-    window.location.href = `mailto:inoutfloridapestcontrol@gmail.com?subject=${subject}&body=${body}`
+    window.location.href = `mailto:info@boyntonbeachlandscaping.com?subject=${subject}&body=${body}`
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

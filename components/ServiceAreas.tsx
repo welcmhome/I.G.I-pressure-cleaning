@@ -5,15 +5,15 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 
 const cities = [
+  'Boynton Beach',
+  'Delray Beach',
   'Boca Raton',
-  'Palm Beach',
-  'Broward Estates',
-  'Hollywood',
-  'Fort Lauderdale',
-  'Parkland',
-  'Pembroke Pines',
-  'Coral Springs',
-  'Plantation',
+  'Lake Worth',
+  'West Palm Beach',
+  'Palm Beach Gardens',
+  'Wellington',
+  'Jupiter',
+  'Greenacres',
 ]
 
 export default function ServiceAreas() {
@@ -33,10 +33,10 @@ export default function ServiceAreas() {
             Coverage
           </p>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
-            Serving South Florida
+            Serving Boynton Beach & South Florida
           </h2>
           <p className="mt-3 text-gray-600 text-sm sm:text-base max-w-xl mx-auto">
-            Pest control and prevention throughout the greater South Florida area.
+            Landscaping and gardening throughout Boynton Beach and the greater South Florida area.
           </p>
         </motion.div>
 

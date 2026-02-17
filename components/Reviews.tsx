@@ -7,45 +7,31 @@ import { useRef } from 'react'
 const reviews = [
   {
     name: 'Maria R.',
-    location: 'Boca Raton',
+    location: 'Boynton Beach',
     rating: 5,
     date: '2 weeks ago',
-    text: 'Had ants everywhere in the kitchen. They came out same day, sprayed, and we haven’t seen one since. Very professional and explained everything in Spanish for my mom. Highly recommend.',
+    text: 'Best landscaping company in the area. Quality work, great attention to detail, and competitive pricing. They treated our property as if it were their own. Highly recommend.',
   },
   {
     name: 'James T.',
-    location: 'Fort Lauderdale',
+    location: 'Delray Beach',
     rating: 5,
     date: '1 month ago',
-    text: 'We had a roach problem in our condo. In & Out showed up on time, did a thorough treatment, and followed up. Building is clean now. Fair price and no pressure.',
+    text: 'Over 20 years of experience really shows. Our yard has never looked better. Free estimate, honest quote, and the crew was efficient and professional from start to finish.',
   },
   {
     name: 'Sandra L.',
-    location: 'Coral Springs',
+    location: 'Boca Raton',
     rating: 5,
     date: '3 weeks ago',
-    text: 'Needed someone for recurring pest control. They set up a schedule and our yard and house have been pest-free. The guy who comes is friendly and always on schedule.',
+    text: 'We got a free estimate and were impressed by the attention to detail. They built a lasting relationship with us and guaranteed our satisfaction. Will use again.',
   },
   {
     name: 'David M.',
-    location: 'Pembroke Pines',
+    location: 'Lake Worth',
     rating: 5,
     date: '1 month ago',
-    text: 'Termite inspection and treatment. They were honest about what we needed, didn’t try to upsell. Work was done fast and we got a clear report. Great experience.',
-  },
-  {
-    name: 'Carmen G.',
-    location: 'Hollywood',
-    rating: 5,
-    date: '2 months ago',
-    text: 'Called several places and these guys were the only ones who could come the next day. Took care of our rodent issue. Very respectful and left everything clean.',
-  },
-  {
-    name: 'Robert K.',
-    location: 'Parkland',
-    rating: 5,
-    date: '3 weeks ago',
-    text: 'Had a spider issue in the garage and around the house. They did an interior and exterior treatment. No more spiders and the quote was very reasonable. Will use again.',
+    text: 'Honest, professional, and efficient. Safety was clearly a priority. Great project from start to finish. Best gardening company we have used in South Florida.',
   },
 ]
 
@@ -137,7 +123,7 @@ export default function Reviews() {
           className="text-center mt-10"
         >
           <a
-            href="https://www.google.com/search?q=In+%26+Out+Florida+Pest+Control+Reviews"
+            href="https://www.google.com/search?q=Boynton+Beach+Landscaping+Reviews"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-gray-600 hover:text-primary-blue font-medium text-sm transition-colors"

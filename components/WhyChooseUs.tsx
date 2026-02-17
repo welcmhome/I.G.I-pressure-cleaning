@@ -6,20 +6,20 @@ import { useRef } from 'react'
 
 const features = [
   {
-    title: 'Licensed & Insured',
-    description: 'Fully licensed and insured for your protection.',
+    title: '20+ Years Experience',
+    description: 'Built an excellent reputation for client satisfaction.',
   },
   {
-    title: 'Bilingual',
-    description: 'English and Spanish. We communicate clearly.',
+    title: 'Free Estimates',
+    description: 'No obligation. We give honest, competitive quotes.',
   },
   {
     title: 'Residential & Commercial',
     description: 'Homes, offices, and everything in between.',
   },
   {
-    title: 'Fast response',
-    description: 'Same-day and next-day service when you need it.',
+    title: 'Attention to Detail',
+    description: 'We treat your property as if it were our own.',
   },
 ]
 
@@ -63,8 +63,8 @@ export default function WhyChooseUs() {
             className="relative aspect-[4/3] rounded-none overflow-hidden border-2 border-gray-900/20"
           >
             <img
-              src="/assets/hero-pest-control.png"
-              alt="Pest control technician treating a palm tree at a residential property"
+              src="https://images.unsplash.com/photo-1558904541-efa84396f2eb?w=1200&q=80"
+              alt="Boynton Beach Landscaping LLC — quality landscaping and gardening"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -73,21 +73,21 @@ export default function WhyChooseUs() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-gray-900 font-semibold text-sm uppercase tracking-wider mb-2">Why In & Out</p>
+            <p className="text-gray-900 font-semibold text-sm uppercase tracking-wider mb-2">Why Boynton Beach Landscaping</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-              Professional treatment you can trust
+              Quality work and lasting relationships
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              We don’t just spray and leave. We identify the problem, treat it properly, and follow up so your space stays protected. Licensed, insured, and focused on results.
+              We value honesty and integrity. Safety and efficiency are among our top priorities, guaranteeing a great project from start to finish. We strive to build lasting relationships and guarantee your satisfaction.
             </p>
             <a
-              href="tel:9542134572"
+              href="tel:5611234567"
               className="w-full max-w-2xl mx-auto lg:mx-0 lg:max-w-none lg:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 lg:px-6 lg:py-3 bg-gray-900 text-white font-bold rounded-none text-lg lg:text-base hover:bg-black transition-colors"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              Call for a free quote
+              Call for a free estimate
             </a>
           </motion.div>
         </div>
