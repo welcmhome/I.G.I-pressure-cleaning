@@ -14,7 +14,7 @@ const heroReviewSnippets = [
 export default function Hero() {
   return (
     <section className="relative min-h-0 pt-20 lg:pt-24 overflow-hidden bg-white">
-      <div className="relative grid grid-cols-1 lg:grid-cols-2 min-h-[55vh] lg:min-h-[90vh] items-center">
+      <div className="relative grid grid-cols-1 lg:grid-cols-2 min-h-[55vh] lg:min-h-[70vh] items-center">
         {/* Left: Text content — on mobile this sits on top of the image */}
         <div className="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:pl-16 lg:pr-12 py-16 lg:py-24 order-2 lg:order-1">
           <motion.p
@@ -88,7 +88,7 @@ export default function Hero() {
 
         {/* Right: Image — on mobile full-bleed behind text, on lg side-by-side */}
         <div className="absolute inset-0 lg:relative lg:order-2 min-h-0 lg:min-h-full">
-          <div className="relative w-full h-full min-h-full lg:min-h-[90vh]">
+          <div className="relative w-full h-full min-h-full lg:min-h-[70vh]">
             <img
               src="/assets/hero-pest-control.png"
               alt="Pest control technician treating a palm tree at a residential property"

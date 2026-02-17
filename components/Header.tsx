@@ -137,10 +137,10 @@ export default function Header() {
       </AnimatePresence>
 
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent shadow-none border-transparent ${
           isScrolled
-            ? 'bg-white shadow-md'
-            : 'bg-transparent shadow-none border-transparent lg:bg-white/95 lg:backdrop-blur-sm lg:border-b lg:border-gray-100'
+            ? 'lg:bg-white lg:shadow-md'
+            : 'lg:bg-white/95 lg:backdrop-blur-sm lg:border-b lg:border-gray-100'
         }`}
       >
         <nav className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
