@@ -5,6 +5,12 @@
 @layer base {
   :root {
     --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+    /* Logo palette: Boynton Beach Landscaping */
+    --logo-green: #228B22;
+    --logo-green-light: #32CD32;
+    --logo-turquoise: #00CED1;
+    --logo-orange: #FF8C00;
+    --logo-yellow: #FFD700;
   }
 
   html {

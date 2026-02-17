@@ -8,19 +8,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Logo palette: palm greens, ocean turquoise, sun orange/yellow
         primary: {
-          green: '#16a34a',
-          'green-dark': '#15803d',
-          'green-light': '#22c55e',
-          blue: '#2563eb',
-          'blue-dark': '#1d4ed8',
-          'blue-light': '#3b82f6',
+          green: '#228B22',           // forest green (palm leaves)
+          'green-dark': '#1a6b1a',
+          'green-light': '#32CD32',   // lime green (logo foliage)
+          blue: '#00CED1',           // turquoise (logo water)
+          'blue-dark': '#00a8a8',
+          'blue-light': '#40E0D0',   // light turquoise
         },
         accent: {
-          red: '#dc2626',
-          'red-dark': '#b91c1c',
-          yellow: '#eab308',
-          'yellow-dark': '#ca8a04',
+          orange: '#FF8C00',         // sun orange (logo)
+          'orange-dark': '#e67e00',
+          yellow: '#FFD700',        // sun yellow (logo text)
+          'yellow-dark': '#e6c200',
         },
       },
       fontFamily: {

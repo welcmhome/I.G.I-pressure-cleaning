@@ -82,7 +82,7 @@ export default function Header() {
               className="fixed inset-0 w-full bg-white z-[102] lg:hidden flex flex-col"
             >
               {/* Green accent bar at top */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-green to-emerald-400" />
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-green to-primary-green-light" />
 
               {/* Header row: close + title — full width */}
               <div className="flex items-center justify-between px-6 pt-8 pb-4 border-b border-gray-100">
