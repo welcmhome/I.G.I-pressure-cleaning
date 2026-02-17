@@ -13,15 +13,6 @@ const navLinks = [
   { href: '#contact', label: 'Contact', icon: 'M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z' },
 ]
 
-const headerReviewSnippets = [
-  { name: 'Maria R.', location: 'Boca Raton', quote: 'Very professional… explained everything in Spanish. Highly recommend.' },
-  { name: 'James T.', location: 'Fort Lauderdale', quote: 'Thorough treatment, followed up. Fair price and no pressure.' },
-  { name: 'Sandra L.', location: 'Coral Springs', quote: 'Yard and house have been pest-free. Friendly and always on schedule.' },
-  { name: 'David M.', location: 'Pembroke Pines', quote: 'Honest about what we needed. Work done fast, clear report.' },
-  { name: 'Carmen G.', location: 'Hollywood', quote: 'Only ones who could come the next day. Very respectful.' },
-  { name: 'Robert K.', location: 'Parkland', quote: 'No more spiders, quote very reasonable. Will use again.' },
-]
-
 const SCROLL_THRESHOLD = 20
 const MOBILE_HIDE_THRESHOLD = 60
 
@@ -76,18 +67,17 @@ export default function Header() {
               aria-hidden="true"
             />
             <motion.div
-              initial={{ x: '100%' }}
-              animate={{ x: 0 }}
-              exit={{ x: '100%' }}
-              transition={{ type: 'spring', damping: 28, stiffness: 300 }}
-              className="fixed top-0 right-0 bottom-0 w-full max-w-sm bg-white shadow-2xl z-[102] lg:hidden flex flex-col"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="fixed inset-0 w-full bg-white z-[102] lg:hidden flex flex-col"
             >
-              {/* Green accent strip */}
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary-green" />
+              {/* Green accent bar at top */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-green to-emerald-400" />
 
-              {/* Header row: close + title */}
-              <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-gray-100">
+              {/* Header row: close + title — full width */}
+              <div className="flex items-center justify-between px-6 pt-8 pb-4 border-b border-gray-100">
                 <span className="text-sm font-semibold text-gray-500 uppercase tracking-widest">Menu</span>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -108,9 +98,9 @@ export default function Header() {
                 </button>
               </div>
 
-              {/* Nav links with stagger */}
-              <nav className="flex-1 overflow-y-auto px-6 py-6">
-                <ul className="space-y-1">
+              {/* Nav links with stagger — centered on full-screen menu */}
+              <nav className="flex-1 overflow-y-auto px-6 py-6 flex flex-col items-center justify-center max-w-md mx-auto w-full">
+                <ul className="space-y-1 w-full">
                   {navLinks.map((link, i) => (
                     <motion.li
                       key={link.href}
@@ -173,29 +163,6 @@ export default function Header() {
             : 'bg-transparent shadow-none border-transparent'
         } ${mobileHeaderVisible ? 'translate-y-0' : '-translate-y-full'}`}
       >
-        {/* Scrolling reviews — very top of site */}
-        <div className="border-b border-gray-200/80 bg-gray-50/95 py-2 overflow-hidden">
-          <div className="flex w-max animate-marquee">
-            {[...headerReviewSnippets, ...headerReviewSnippets].map((r, i) => (
-              <div key={i} className="flex items-center gap-4 px-8 flex-shrink-0">
-                <div className="flex gap-0.5 text-amber-400">
-                  {[1, 2, 3, 4, 5].map((s) => (
-                    <svg key={s} className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <span className="text-gray-600 text-sm font-medium whitespace-nowrap">
-                  {r.quote}
-                </span>
-                <span className="text-gray-400 text-xs whitespace-nowrap">
-                  — {r.name}, {r.location}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-
         <nav className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="relative flex items-center justify-between h-20 sm:h-24">
             {/* Desktop: logo + text left */}

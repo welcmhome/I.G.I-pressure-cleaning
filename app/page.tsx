@@ -26,8 +26,10 @@ export default function Home() {
       <CTA />
       <Contact />
       <Footer />
-      <FloatingCallButton />
-      <ScrollToTop />
+      <div className="hidden lg:block">
+        <FloatingCallButton />
+        <ScrollToTop />
+      </div>
 
       {/* Fixed Get a quote bar — mobile, bottom, green */}
       <a
