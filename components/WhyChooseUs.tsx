@@ -59,7 +59,7 @@ export default function WhyChooseUs() {
             className="relative aspect-[4/3] rounded-none overflow-hidden border-2 border-gray-900/20"
           >
             <img
-              src="https://images.unsplash.com/photo-1558904541-efa84396f2eb?w=1200&q=80"
+              src="/assets/hero-landscaping.png"
               alt="Boynton Beach Landscaping LLC — quality landscaping and gardening"
               className="w-full h-full object-cover"
             />

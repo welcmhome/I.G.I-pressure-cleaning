@@ -5,7 +5,7 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 
 const localImages = [
-  'https://images.unsplash.com/photo-1558904541-efa84396f2eb?w=800&q=80',   // garden/design
+  '/assets/hero-landscaping.png',   // Landscaping Design & Installation
   'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80', // lawn
   'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80', // planting
   'https://images.unsplash.com/photo-1598902108854-10e335adac99?w=800&q=80', // trees
