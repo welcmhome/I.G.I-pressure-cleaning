@@ -62,7 +62,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.15 }}
             className="mt-4 text-2xl sm:text-3xl font-semibold text-gray-900"
           >
-            Pests out — <span className="text-accent-red">Peace in</span>
+            <span className="text-accent-red">Pests out</span> — <span className="text-primary-blue">Peace in</span>
           </motion.p>
 
           <motion.p
