@@ -16,7 +16,7 @@ export default function About() {
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
             transition={{ duration: 0.8 }}
-            className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-gray-200"
+            className="relative aspect-[4/3] rounded-none overflow-hidden shadow-lg border border-gray-200"
           >
             <img
               src="/assets/IMAGE%203.jpg"
@@ -43,13 +43,13 @@ export default function About() {
             </p>
 
             <div className="flex flex-wrap gap-3 mt-8 justify-center lg:justify-start">
-              <div className="px-4 py-2 bg-gray-900 text-white font-semibold rounded-xl text-sm">
+              <div className="px-4 py-2 bg-gray-900 text-white font-semibold rounded-none text-sm">
                 Licensed & Insured
               </div>
-              <div className="px-4 py-2 bg-gray-900 text-white font-semibold rounded-xl text-sm">
+              <div className="px-4 py-2 bg-gray-900 text-white font-semibold rounded-none text-sm">
                 Bilingual
               </div>
-              <div className="px-4 py-2 bg-gray-900 text-white font-semibold rounded-xl text-sm">
+              <div className="px-4 py-2 bg-gray-900 text-white font-semibold rounded-none text-sm">
                 Residential & Commercial
               </div>
             </div>

@@ -52,9 +52,9 @@ export default function ServiceAreas() {
               initial={{ opacity: 0, y: 8 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.35, delay: 0.05 * index }}
-              className="flex items-center gap-2 sm:gap-3 py-3 sm:py-4 px-4 sm:px-5 bg-gray-50 rounded-xl border border-gray-100 hover:border-primary-green/30 hover:bg-primary-green/5 transition-colors"
+              className="flex items-center gap-2 sm:gap-3 py-3 sm:py-4 px-4 sm:px-5 bg-gray-50 rounded-none border border-gray-100 hover:border-primary-green/30 hover:bg-primary-green/5 transition-colors"
             >
-              <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-primary-green/15 flex items-center justify-center">
+              <span className="flex-shrink-0 w-8 h-8 rounded-none bg-primary-green/15 flex items-center justify-center">
                 <svg className="w-4 h-4 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />

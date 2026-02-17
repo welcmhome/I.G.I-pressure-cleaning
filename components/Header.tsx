@@ -61,7 +61,7 @@ export default function Header() {
                 <span className="text-sm font-semibold text-gray-500 uppercase tracking-widest">Menu</span>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-2.5 -mr-2 rounded-xl bg-gray-100 hover:bg-gray-200 active:scale-95 transition-all"
+                  className="p-2.5 -mr-2 rounded-none bg-gray-100 hover:bg-gray-200 active:scale-95 transition-all"
                   aria-label="Close menu"
                 >
                   <motion.svg
@@ -97,9 +97,9 @@ export default function Header() {
                           const el = document.querySelector(link.href)
                           if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
                         }}
-                        className="flex items-center gap-4 py-4 px-4 -mx-4 rounded-xl text-gray-800 font-semibold hover:bg-primary-green/10 hover:text-primary-green active:scale-[0.99] transition-all group"
+                        className="flex items-center gap-4 py-4 px-4 -mx-4 rounded-none text-gray-800 font-semibold hover:bg-primary-green/10 hover:text-primary-green active:scale-[0.99] transition-all group"
                       >
-                        <span className="flex-shrink-0 w-10 h-10 rounded-lg bg-gray-100 group-hover:bg-primary-green/20 flex items-center justify-center transition-colors">
+                        <span className="flex-shrink-0 w-10 h-10 rounded-none bg-gray-100 group-hover:bg-primary-green/20 flex items-center justify-center transition-colors">
                           <svg className="w-5 h-5 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={link.icon} />
                           </svg>
@@ -121,9 +121,9 @@ export default function Header() {
               >
                 <a
                   href="tel:9542134572"
-                  className="flex items-center justify-center gap-3 w-full py-4 px-5 bg-gray-900 text-white font-bold rounded-2xl hover:bg-black active:scale-[0.98] transition-all shadow-lg shadow-gray-900/25"
+                  className="flex items-center justify-center gap-3 w-full py-4 px-5 bg-gray-900 text-white font-bold rounded-none hover:bg-black active:scale-[0.98] transition-all shadow-lg shadow-gray-900/25"
                 >
-                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-white/20">
+                  <span className="flex items-center justify-center w-10 h-10 rounded-none bg-white/20">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
@@ -176,7 +176,7 @@ export default function Header() {
               ))}
               <a
                 href="tel:9542134572"
-                className="px-5 py-2.5 bg-gray-900 text-white font-bold rounded-xl text-sm hover:bg-black transition-colors"
+                className="px-5 py-2.5 bg-gray-900 text-white font-bold rounded-none text-sm hover:bg-black transition-colors"
               >
                 Call Now
               </a>
@@ -185,23 +185,23 @@ export default function Header() {
             {/* Animated hamburger */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden shrink-0 relative w-12 h-12 flex items-center justify-center rounded-xl bg-gray-100 hover:bg-gray-200 active:scale-95 transition-all"
+              className="lg:hidden shrink-0 relative w-12 h-12 flex items-center justify-center rounded-none bg-gray-100 hover:bg-gray-200 active:scale-95 transition-all"
               aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={isMobileMenuOpen}
             >
               <div className="w-6 h-5 flex flex-col justify-between">
                 <motion.span
-                  className="block h-0.5 w-full bg-gray-800 rounded-full origin-center"
+                  className="block h-0.5 w-full bg-gray-800 rounded-none origin-center"
                   animate={isMobileMenuOpen ? { y: 9, rotate: 45 } : { y: 0, rotate: 0 }}
                   transition={{ type: 'spring', damping: 22, stiffness: 300 }}
                 />
                 <motion.span
-                  className="block h-0.5 w-full bg-gray-800 rounded-full"
+                  className="block h-0.5 w-full bg-gray-800 rounded-none"
                   animate={isMobileMenuOpen ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }}
                   transition={{ duration: 0.15 }}
                 />
                 <motion.span
-                  className="block h-0.5 w-full bg-gray-800 rounded-full origin-center"
+                  className="block h-0.5 w-full bg-gray-800 rounded-none origin-center"
                   animate={isMobileMenuOpen ? { y: -9, rotate: -45 } : { y: 0, rotate: 0 }}
                   transition={{ type: 'spring', damping: 22, stiffness: 300 }}
                 />

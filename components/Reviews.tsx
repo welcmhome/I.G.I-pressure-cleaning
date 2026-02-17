@@ -105,10 +105,10 @@ export default function Reviews() {
               initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-md hover:border-primary-blue/20 transition-all duration-300"
+              className="bg-white rounded-none p-6 shadow-sm border border-gray-200 hover:shadow-md hover:border-primary-blue/20 transition-all duration-300"
             >
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-full bg-primary-blue/15 flex items-center justify-center text-primary-blue font-bold text-sm">
+                <div className="w-10 h-10 rounded-none bg-primary-blue/15 flex items-center justify-center text-primary-blue font-bold text-sm">
                   {review.name.charAt(0)}
                 </div>
                 <div>

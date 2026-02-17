@@ -70,7 +70,7 @@ export default function Contact() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent transition-all duration-200 bg-white"
+              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent transition-all duration-200 bg-white"
             />
           </div>
 
@@ -85,7 +85,7 @@ export default function Contact() {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent transition-all duration-200 bg-white"
+              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent transition-all duration-200 bg-white"
             />
           </div>
 
@@ -100,7 +100,7 @@ export default function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent transition-all duration-200 bg-white"
+              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent transition-all duration-200 bg-white"
             />
           </div>
 
@@ -115,7 +115,7 @@ export default function Contact() {
               onChange={handleChange}
               required
               rows={5}
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent transition-all duration-200 bg-white resize-none"
+              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-primary-blue focus:border-transparent transition-all duration-200 bg-white resize-none"
             />
           </div>
 
@@ -123,7 +123,7 @@ export default function Contact() {
             type="submit"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="w-full px-8 py-4 bg-gray-900 text-white font-bold rounded-xl text-lg hover:bg-black transition-all"
+            className="w-full px-8 py-4 bg-gray-900 text-white font-bold rounded-none text-lg hover:bg-black transition-all"
           >
             Send Message
           </motion.button>

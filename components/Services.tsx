@@ -77,7 +77,7 @@ export default function Services() {
               initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="group flex flex-col sm:flex-row overflow-hidden bg-white rounded-2xl border border-gray-200 hover:border-primary-blue/50 hover:shadow-lg transition-all"
+              className="group flex flex-col sm:flex-row overflow-hidden bg-white rounded-none border border-gray-200 hover:border-primary-blue/50 hover:shadow-lg transition-all"
             >
               <div className="sm:w-2/5 relative h-44 sm:h-auto sm:min-h-[180px] flex-shrink-0">
                 <img

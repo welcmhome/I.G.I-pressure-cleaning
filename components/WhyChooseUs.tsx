@@ -42,9 +42,9 @@ export default function WhyChooseUs() {
               initial={{ opacity: 0, y: 16 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-gray-50 rounded-2xl p-6 border border-gray-200 text-center hover:border-primary-blue/40 hover:shadow-md transition-all"
+              className="bg-gray-50 rounded-none p-6 border border-gray-200 text-center hover:border-primary-blue/40 hover:shadow-md transition-all"
             >
-              <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-primary-blue/15 flex items-center justify-center">
+              <div className="w-12 h-12 mx-auto mb-3 rounded-none bg-primary-blue/15 flex items-center justify-center">
                 <svg className="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
             initial={{ opacity: 0, x: -20 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="relative aspect-[4/3] rounded-2xl overflow-hidden border-2 border-gray-900/20"
+            className="relative aspect-[4/3] rounded-none overflow-hidden border-2 border-gray-900/20"
           >
             <img
               src="/assets/hero-pest-control.png"
@@ -82,7 +82,7 @@ export default function WhyChooseUs() {
             </p>
             <a
               href="tel:9542134572"
-              className="w-full max-w-2xl mx-auto lg:mx-0 lg:max-w-none lg:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 lg:px-6 lg:py-3 bg-gray-900 text-white font-bold rounded-xl text-lg lg:text-base hover:bg-black transition-colors"
+              className="w-full max-w-2xl mx-auto lg:mx-0 lg:max-w-none lg:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 lg:px-6 lg:py-3 bg-gray-900 text-white font-bold rounded-none text-lg lg:text-base hover:bg-black transition-colors"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
