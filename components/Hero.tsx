@@ -1,6 +1,9 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+
+const ROTATING_PHRASES = ['Peace in.', 'Done right.', 'Problem solved.']
 
 const heroReviewSnippets = [
   { name: 'Maria R.', location: 'Boca Raton', quote: 'Very professional… explained everything in Spanish. Highly recommend.' },
@@ -12,6 +15,15 @@ const heroReviewSnippets = [
 ]
 
 export default function Hero() {
+  const [phraseIndex, setPhraseIndex] = useState(0)
+
+  useEffect(() => {
+    const t = setInterval(() => {
+      setPhraseIndex((i) => (i + 1) % ROTATING_PHRASES.length)
+    }, 2800)
+    return () => clearInterval(t)
+  }, [])
+
   return (
     <section className="relative pt-20 lg:pt-24 overflow-hidden bg-white">
       <div className="relative grid grid-cols-1 lg:grid-cols-2 min-h-[60vh] lg:min-h-[72vh] items-center">
@@ -33,7 +45,20 @@ export default function Hero() {
             className="font-oswald text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-[1.05] uppercase tracking-tight"
           >
             Pests out.<br />
-            <span className="text-primary-green">Peace in.</span>
+            <span className="inline-block overflow-hidden h-[1.05em] leading-none align-top min-w-[14ch] sm:min-w-[16ch]">
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={phraseIndex}
+                  initial={{ y: 24, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: -24, opacity: 0 }}
+                  transition={{ duration: 0.35 }}
+                  className="block text-primary-green"
+                >
+                  {ROTATING_PHRASES[phraseIndex]}
+                </motion.span>
+              </AnimatePresence>
+            </span>
           </motion.h1>
 
           {/* Green accent bar — matches header */}
