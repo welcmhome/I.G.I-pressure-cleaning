@@ -82,7 +82,7 @@ export default function Header() {
               className="fixed inset-0 w-full bg-white z-[102] lg:hidden flex flex-col"
             >
               {/* Green accent bar at top */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-green to-primary-green-light" />
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-blue to-primary-blue-light" />
 
               {/* Header row: close + title — full width */}
               <div className="flex items-center justify-between px-6 pt-8 pb-4 border-b border-gray-100">
@@ -125,10 +125,10 @@ export default function Header() {
                           const el = document.querySelector(link.href)
                           if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
                         }}
-                        className="flex items-center gap-4 py-4 px-4 -mx-4 rounded-none text-gray-800 font-semibold hover:bg-primary-green/10 hover:text-primary-green active:scale-[0.99] transition-all group"
+                        className="flex items-center gap-4 py-4 px-4 -mx-4 rounded-none text-gray-800 font-semibold hover:bg-primary-blue/10 hover:text-primary-blue active:scale-[0.99] transition-all group"
                       >
-                        <span className="flex-shrink-0 w-10 h-10 rounded-none bg-gray-100 group-hover:bg-primary-green/20 flex items-center justify-center transition-colors">
-                          <svg className="w-5 h-5 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <span className="flex-shrink-0 w-10 h-10 rounded-none bg-gray-100 group-hover:bg-primary-blue/20 flex items-center justify-center transition-colors">
+                          <svg className="w-5 h-5 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={link.icon} />
                           </svg>
                         </span>
@@ -221,7 +221,7 @@ export default function Header() {
                     const el = document.querySelector(link.href)
                     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
                   }}
-                  className={`font-bold text-sm whitespace-nowrap transition-colors ${isScrolled ? 'text-gray-900 hover:text-primary-green' : 'text-white/95 hover:text-white'}`}
+                  className={`font-bold text-sm whitespace-nowrap transition-colors ${isScrolled ? 'text-gray-900 hover:text-primary-blue' : 'text-white/95 hover:text-white'}`}
                 >
                   {link.label}
                 </a>
@@ -237,7 +237,7 @@ export default function Header() {
                   const el = document.querySelector('#contact')
                   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
                 }}
-                className="px-5 py-2.5 font-bold rounded-none text-sm bg-primary-green text-white hover:bg-primary-green-dark transition-colors"
+                className="px-5 py-2.5 font-bold rounded-none text-sm bg-primary-blue text-white hover:bg-primary-blue-dark transition-colors"
               >
                 Get a quote
               </a>

@@ -8,12 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Logo palette: palm greens, ocean turquoise, sun orange/yellow
+        // Logo palette: turquoise main, green accent only, sun orange/yellow
         primary: {
-          green: '#228B22',           // forest green (palm leaves)
+          green: '#228B22',           // accent only (logo palm leaves)
           'green-dark': '#1a6b1a',
-          'green-light': '#32CD32',   // lime green (logo foliage)
-          blue: '#00CED1',           // turquoise (logo water)
+          'green-light': '#32CD32',
+          blue: '#00CED1',           // main brand (logo water)
           'blue-dark': '#00a8a8',
           'blue-light': '#40E0D0',   // light turquoise
         },

@@ -60,7 +60,7 @@ npm run dev
 
 ### Colors
 
-Edit `tailwind.config.js` to customize the color scheme. The primary green color is defined as `primary-green`.
+Edit `tailwind.config.js` to customize the color scheme. The main brand color is turquoise (`primary-blue`); green is used as an accent only.
 
 ### Content
 

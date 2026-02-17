@@ -74,7 +74,7 @@ export default function Hero() {
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -24, opacity: 0 }}
                   transition={{ duration: 0.35 }}
-                  className="block text-primary-green lg:text-primary-green-light"
+                  className="block text-primary-blue lg:text-primary-blue-light"
                 >
                   {ROTATING_PHRASES[phraseIndex]}
                 </motion.span>
@@ -86,7 +86,7 @@ export default function Hero() {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="origin-left mt-5 h-1 w-24 bg-primary-green lg:bg-primary-green-light"
+            className="origin-left mt-5 h-1 w-24 bg-primary-blue lg:bg-primary-blue-light"
           />
 
           <motion.p
@@ -115,7 +115,7 @@ export default function Hero() {
             </a>
             <a
               href="#services"
-              className="inline-flex items-center text-gray-700 lg:text-gray-300 font-semibold text-sm border-b-2 border-transparent hover:border-primary-green hover:text-primary-green transition-colors"
+              className="inline-flex items-center text-gray-700 lg:text-gray-300 font-semibold text-sm border-b-2 border-transparent hover:border-primary-blue hover:text-primary-blue transition-colors"
             >
               Our services →
             </a>
@@ -157,7 +157,7 @@ export default function Hero() {
       </div>
 
       {/* Trust bar — green to match logo; single row on mobile like desktop */}
-      <div className="relative z-20 bg-primary-green text-white py-3 px-4 lg:py-4 lg:px-6">
+      <div className="relative z-20 bg-primary-blue text-white py-3 px-4 lg:py-4 lg:px-6">
         <div className="max-w-5xl mx-auto flex flex-nowrap justify-center gap-4 sm:gap-6 lg:gap-12 text-center text-xs sm:text-sm font-semibold overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
           <span className="flex items-center gap-2">
             <svg className="w-5 h-5 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
