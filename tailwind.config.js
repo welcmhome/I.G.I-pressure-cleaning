@@ -8,20 +8,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Logo palette: turquoise main, green accent only, sun orange/yellow
+        // Pressure cleaning palette: water blues, clean teals, spray accent
         primary: {
-          green: '#228B22',           // accent only (logo palm leaves)
-          'green-dark': '#1a6b1a',
-          'green-light': '#32CD32',
-          blue: '#00CED1',           // main brand (logo water)
-          'blue-dark': '#00a8a8',
-          'blue-light': '#40E0D0',   // light turquoise
+          green: '#0d9488',           // teal accent (water/clean)
+          'green-dark': '#0f766e',
+          'green-light': '#2dd4bf',
+          blue: '#0891b2',            // main brand - pressure cleaning blue
+          'blue-dark': '#0e7490',
+          'blue-light': '#22d3ee',    // water/spray highlight
         },
         accent: {
-          orange: '#FF8C00',         // sun orange (logo)
-          'orange-dark': '#e67e00',
-          yellow: '#FFD700',        // sun yellow (logo text)
-          'yellow-dark': '#e6c200',
+          orange: '#f97316',          // CTA / spray accent
+          'orange-dark': '#ea580c',
+          yellow: '#fbbf24',          // trust / highlight
+          'yellow-dark': '#f59e0b',
         },
       },
       fontFamily: {

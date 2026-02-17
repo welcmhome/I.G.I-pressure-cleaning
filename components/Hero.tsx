@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { WaterDropsPattern, WaterDropIcon, PressureWandIcon } from '@/components/WaterDrops'
+import { pressureCleaningImages } from '@/lib/pressure-cleaning-images'
 
 const ROTATING_PHRASES = [
   { text: 'Done right.', color: 'text-primary-blue lg:text-primary-blue-light' },
@@ -28,15 +30,16 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-white">
+      <WaterDropsPattern className="z-0" />
       {/* Hero: on mobile = white + content + image below; on desktop = full-bleed background */}
       <div className="relative flex flex-col lg:min-h-[80vh] lg:flex-row lg:items-center">
-        {/* Background image - desktop only; shifted right + slight zoom to show person */}
+        {/* Background: pressure cleaning - clean house exterior */}
         <div className="absolute inset-0 z-0 hidden lg:block overflow-hidden">
           <img
-            src="/assets/tropical-landscape-design.jpg"
+            src={pressureCleaningImages.hero}
             alt=""
             aria-hidden
-            className="absolute inset-0 w-full h-full object-cover object-right scale-105"
+            className="absolute inset-0 w-full h-full object-cover object-center scale-105"
           />
           {/* Gradient from lower-left up (softer on the left) */}
           <div className="absolute inset-0 bg-gradient-to-tr from-black/70 via-black/40 to-transparent pointer-events-none" />
@@ -52,7 +55,10 @@ export default function Hero() {
         </div>
 
         {/* Content - white on mobile (tall so only ~1/3 of image visible), over background on desktop */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:pl-5 xl:pl-8 lg:pr-8 pt-40 sm:pt-44 lg:pt-44 pb-12 sm:pb-14 lg:pb-32 bg-white lg:bg-transparent min-h-[62vh] lg:min-h-0 flex flex-col justify-start lg:justify-center">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:pl-5 xl:pl-8 lg:pr-8 pt-40 sm:pt-44 lg:pt-44 pb-12 sm:pb-14 lg:pb-32 bg-white/95 lg:bg-transparent min-h-[62vh] lg:min-h-0 flex flex-col justify-start lg:justify-center">
+          <div className="absolute right-4 top-1/2 -translate-y-1/2 hidden xl:block text-primary-blue/20">
+            <PressureWandIcon className="w-32 h-32" />
+          </div>
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -125,11 +131,11 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Mobile only: image below content - modest size, with dark overlay */}
+        {/* Mobile only: pressure cleaning - house exterior */}
         <div className="lg:hidden relative w-full h-[40vh] min-h-[220px] flex-shrink-0 overflow-hidden">
           <img
-            src="/assets/tropical-landscape-design.jpg"
-            alt="I.G.I Pressure Cleaning LLC - pressure washing and roof cleaning"
+            src={pressureCleaningImages.heroMobile}
+            alt="I.G.I Pressure Cleaning LLC - pressure washing houses, driveways, and roofs"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-black/40 pointer-events-none" />
@@ -159,19 +165,24 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Trust bar - turquoise gradient */}
-      <div className="relative z-20 bg-gradient-to-r from-primary-blue to-primary-blue-light text-white py-3 px-4 lg:py-4 lg:px-6">
-        <div className="max-w-5xl mx-auto flex flex-nowrap justify-center gap-4 sm:gap-6 lg:gap-12 text-center text-xs sm:text-sm font-semibold overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+      {/* Trust bar - pressure cleaning gradient + water / wand icons */}
+      <div className="relative z-20 bg-gradient-to-r from-primary-blue to-primary-blue-light text-white py-3 px-4 lg:py-4 lg:px-6 overflow-hidden">
+        <WaterDropsPattern className="opacity-100 z-0 [&_svg]:opacity-[0.08]" />
+        <div className="relative z-10 max-w-5xl mx-auto flex flex-nowrap justify-center gap-4 sm:gap-6 lg:gap-12 text-center text-xs sm:text-sm font-semibold overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
           <span className="flex items-center gap-2">
-            <svg className="w-5 h-5 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-            </svg>
+            <PressureWandIcon className="w-5 h-5 text-white/95 flex-shrink-0" />
             Licensed & Insured
           </span>
-          <span>Free estimates</span>
+          <span className="flex items-center gap-2">
+            <WaterDropIcon className="w-4 h-4 text-white/90 flex-shrink-0" />
+            Free estimates
+          </span>
           <span>Roof & house cleaning</span>
           <span>Residential & Commercial</span>
-          <span className="font-bold">5.0 Google</span>
+          <span className="font-bold flex items-center gap-1.5">
+            <WaterDropIcon className="w-4 h-4 flex-shrink-0" />
+            5.0 Google
+          </span>
         </div>
       </div>
     </section>

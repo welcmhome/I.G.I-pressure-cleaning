@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { pressureCleaningImages } from '@/lib/pressure-cleaning-images'
 
 const features = [
   { title: 'Licensed & Insured', description: 'Professional, reliable service you can trust.', color: 'blue' },
@@ -59,8 +60,8 @@ export default function WhyChooseUs() {
             className="relative aspect-[4/3] rounded-none overflow-hidden border-2 border-gray-900/20"
           >
             <img
-              src="/assets/why-choose-us.webp"
-              alt="I.G.I Pressure Cleaning LLC — pressure washing and roof cleaning"
+              src={pressureCleaningImages.whyChooseUs}
+              alt="I.G.I Pressure Cleaning LLC - professional pressure washing for houses and driveways"
               className="w-full h-full object-cover"
             />
           </motion.div>

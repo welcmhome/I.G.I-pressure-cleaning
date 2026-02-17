@@ -81,7 +81,7 @@ export default function Header() {
               transition={{ duration: 0.2 }}
               className="fixed inset-0 w-full bg-white z-[102] lg:hidden flex flex-col"
             >
-              {/* Green accent bar at top */}
+              {/* Pressure cleaning accent bar */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-blue to-primary-blue-light" />
 
               {/* Header row: close + title — full width */}
@@ -198,10 +198,10 @@ export default function Header() {
             isScrolled ? 'bg-white' : 'bg-white lg:bg-transparent'
           }`}
         >
-          <div className="relative flex items-center justify-between h-20 sm:h-24">
-            {/* Desktop: logo left */}
+          <div className="relative flex items-center justify-between h-24 sm:h-28">
+            {/* Desktop: logo left - larger for pressure cleaning brand */}
             <Link href="/" className="hidden lg:flex items-center shrink-0" aria-label="I.G.I Pressure Cleaning LLC">
-              <div className="relative w-14 h-14 sm:w-16 sm:h-16 flex-shrink-0">
+              <div className="relative w-20 h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 flex-shrink-0">
                 <img
                   src="/assets/I.G.I%20LOGO.PNG"
                   alt="I.G.I Pressure Cleaning LLC"
@@ -246,10 +246,10 @@ export default function Header() {
             {/* Mobile: invisible spacer so logo stays centered */}
             <div className="flex-1 lg:hidden" aria-hidden />
 
-            {/* Mobile: centered logo */}
+            {/* Mobile: centered logo - larger */}
             <Link
               href="/"
-              className="lg:hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 flex-shrink-0"
+              className="lg:hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0"
               aria-label="I.G.I Pressure Cleaning LLC"
             >
               <img

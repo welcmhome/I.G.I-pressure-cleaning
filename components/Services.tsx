@@ -3,46 +3,38 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-
-const localImages = [
-  '/assets/service-house.webp',
-  '/assets/service-commercial.webp',
-  '/assets/service-roof.webp',
-  '/assets/service-driveway.webp',
-  '/assets/service-deck.webp',
-  '/assets/service-concrete.webp',
-]
+import { pressureCleaningImages } from '@/lib/pressure-cleaning-images'
 
 const services = [
   {
     name: 'House Pressure Washing',
     description: 'Remove dirt, mold, algae, and stains from siding, windows, and exterior surfaces. Enhance curb appeal and protect your home.',
-    image: localImages[0],
+    image: pressureCleaningImages.houseWashing,
   },
   {
     name: 'Commercial Pressure Washing',
     description: 'Storefronts, offices, and business properties. Professional results that make a strong first impression.',
-    image: localImages[1],
+    image: pressureCleaningImages.commercial,
   },
   {
     name: 'Roof Cleaning',
     description: 'Safe, effective roof cleaning to remove black streaks, algae, and moss. Extend the life of your roof.',
-    image: localImages[2],
+    image: pressureCleaningImages.roof,
   },
   {
     name: 'Driveway & Walkway Cleaning',
     description: 'Concrete, pavers, and stone. Restore clean, like-new surfaces and improve safety.',
-    image: localImages[3],
+    image: pressureCleaningImages.driveway,
   },
   {
     name: 'Deck & Patio Cleaning',
     description: 'Wood and composite decks, patios, and outdoor living areas. Gentle yet thorough cleaning.',
-    image: localImages[4],
+    image: pressureCleaningImages.deck,
   },
   {
     name: 'Concrete & Pavers',
     description: 'Driveways, pool decks, and hardscape. We remove oil stains, rust, and years of buildup.',
-    image: localImages[5],
+    image: pressureCleaningImages.concrete,
   },
 ]
 

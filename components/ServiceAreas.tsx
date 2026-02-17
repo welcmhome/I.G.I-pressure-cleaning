@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { WaterDropsPattern } from '@/components/WaterDrops'
 
 const cities = [
   'Delray Beach',
@@ -21,8 +22,9 @@ export default function ServiceAreas() {
   const isInView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="service-areas" ref={ref} className="py-16 sm:py-24 px-4 sm:px-6 lg:px-12 bg-primary-blue/5 border-t border-gray-200">
-      <div className="max-w-4xl mx-auto">
+    <section id="service-areas" ref={ref} className="relative py-16 sm:py-24 px-4 sm:px-6 lg:px-12 bg-primary-blue/5 border-t border-gray-200 overflow-hidden">
+      <WaterDropsPattern className="opacity-100 [&_svg]:opacity-[0.04]" />
+      <div className="relative z-10 max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}

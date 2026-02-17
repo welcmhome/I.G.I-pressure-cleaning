@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { pressureCleaningImages } from '@/lib/pressure-cleaning-images'
 
 export default function About() {
   const ref = useRef(null)
@@ -19,8 +20,8 @@ export default function About() {
             className="relative aspect-[4/3] rounded-none overflow-hidden shadow-lg border border-gray-200"
           >
             <img
-              src="/assets/about.webp"
-              alt="I.G.I Pressure Cleaning LLC — pressure washing and roof cleaning"
+              src={pressureCleaningImages.about}
+              alt="I.G.I Pressure Cleaning LLC - clean house exterior from pressure washing"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
