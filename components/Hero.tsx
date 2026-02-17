@@ -16,8 +16,8 @@ const heroReviewSnippets = [
 export default function Hero() {
   return (
     <section className="relative min-h-0 pt-20 lg:pt-24 overflow-hidden bg-white">
-      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[85vh] lg:min-h-[90vh] items-center">
-        {/* Left: Text content — PlumbPro-style layout */}
+      <div className="relative grid grid-cols-1 lg:grid-cols-2 min-h-[85vh] lg:min-h-[90vh] items-center">
+        {/* Left: Text content — on mobile this sits on top of the image */}
         <div className="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:pl-16 lg:pr-12 py-16 lg:py-24 order-2 lg:order-1">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
@@ -107,15 +107,16 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Right: Image */}
-        <div className="relative order-1 lg:order-2 min-h-[50vh] lg:min-h-full">
-          <div className="relative w-full h-full min-h-[50vh] lg:min-h-[90vh]">
+        {/* Right: Image — on mobile full-bleed behind text, on lg side-by-side */}
+        <div className="absolute inset-0 lg:relative lg:order-2 min-h-0 lg:min-h-full">
+          <div className="relative w-full h-full min-h-full lg:min-h-[90vh]">
             <img
               src="/assets/hero-pest-control.png"
               alt="Pest control technician treating a palm tree at a residential property"
               className="absolute inset-0 w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/30 to-transparent lg:from-white lg:via-white/50 lg:to-transparent" />
+            {/* Overlay: on mobile uniform tint so text reads; on lg keep left-to-right gradient */}
+            <div className="absolute inset-0 bg-gradient-to-b from-white/85 via-white/60 to-white/40 lg:from-white lg:via-white/50 lg:to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent lg:hidden" />
           </div>
         </div>

@@ -41,7 +41,7 @@ export default function Header() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.25 }}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="fixed inset-0 bg-black/60 backdrop-blur-md z-[48] lg:hidden"
+              className="fixed inset-0 bg-black/60 backdrop-blur-md z-[101] lg:hidden"
               aria-hidden="true"
             />
             <motion.div
@@ -49,7 +49,7 @@ export default function Header() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 28, stiffness: 300 }}
-              className="fixed top-0 right-0 bottom-0 w-full max-w-sm bg-white shadow-2xl z-[49] lg:hidden flex flex-col"
+              className="fixed top-0 right-0 bottom-0 w-full max-w-sm bg-white shadow-2xl z-[102] lg:hidden flex flex-col"
             >
               {/* Green accent strip */}
               <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary-green" />
