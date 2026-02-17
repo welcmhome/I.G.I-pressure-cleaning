@@ -13,9 +13,9 @@ const heroReviewSnippets = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[100dvh] lg:min-h-0 pt-20 lg:pt-24 overflow-hidden bg-white">
-      {/* Mobile only: full-bleed image fills viewport (portrait + landscape), very low opacity */}
-      <div className="absolute inset-0 z-0 lg:hidden min-h-[100dvh] min-w-full">
+    <section className="relative min-h-0 lg:min-h-0 pt-0 lg:pt-24 overflow-hidden bg-white">
+      {/* Mobile only: full-bleed image behind content, very low opacity; fills content height */}
+      <div className="absolute inset-0 z-0 lg:hidden min-h-full min-w-full">
         <img
           src="/assets/hero-pest-control.png"
           alt=""
@@ -23,25 +23,35 @@ export default function Hero() {
           className="absolute inset-0 w-full h-full min-w-full min-h-full object-cover object-center opacity-[0.22]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/96 via-white/94 to-white/90" />
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent" />
       </div>
-      <div className="relative grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100dvh-5rem)] lg:min-h-[70vh] items-center">
+      <div className="relative grid grid-cols-1 lg:grid-cols-2 min-h-0 lg:min-h-[70vh] items-start lg:items-center">
         {/* Left: Text content — on mobile this sits on top of the image */}
-        <div className="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:pl-16 lg:pr-12 py-16 lg:py-24 order-2 lg:order-1">
+        <div className="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:pl-16 lg:pr-12 py-10 sm:py-12 lg:py-24 order-2 lg:order-1">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-sm font-semibold text-gray-900 uppercase tracking-widest mb-4"
+            className="text-sm font-semibold text-gray-900 uppercase tracking-widest mb-3 lg:mb-4"
           >
             Licensed & Insured · South Florida
           </motion.p>
 
+          {/* Mobile: full brand name */}
           <motion.h1
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.08 }}
-            className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight"
+            className="lg:hidden text-3xl sm:text-4xl font-bold text-gray-900 leading-tight"
+          >
+            In & Out Florida Pest Control
+          </motion.h1>
+          {/* Desktop: unchanged */}
+          <motion.h1
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.08 }}
+            className="hidden lg:block text-5xl xl:text-6xl font-bold text-gray-900 leading-tight"
           >
             Florida Pest Control
           </motion.h1>
