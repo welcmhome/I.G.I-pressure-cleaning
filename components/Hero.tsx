@@ -14,6 +14,17 @@ const heroReviewSnippets = [
 export default function Hero() {
   return (
     <section className="relative min-h-0 pt-20 lg:pt-24 overflow-hidden bg-white">
+      {/* Mobile only: full-bleed image from section top so no white gap */}
+      <div className="absolute inset-0 z-0 lg:hidden min-h-[55vh]">
+        <img
+          src="/assets/hero-pest-control.png"
+          alt=""
+          aria-hidden
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/92 via-white/82 to-white/65" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
+      </div>
       <div className="relative grid grid-cols-1 lg:grid-cols-2 min-h-[55vh] lg:min-h-[70vh] items-center">
         {/* Left: Text content — on mobile this sits on top of the image */}
         <div className="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:pl-16 lg:pr-12 py-16 lg:py-24 order-2 lg:order-1">
@@ -86,17 +97,15 @@ export default function Hero() {
           </motion.p>
         </div>
 
-        {/* Right: Image — on mobile full-bleed behind text, on lg side-by-side */}
-        <div className="absolute inset-0 lg:relative lg:order-2 min-h-0 lg:min-h-full">
-          <div className="relative w-full h-full min-h-full lg:min-h-[70vh]">
+        {/* Right: Image — desktop only (mobile uses section-level full-bleed above) */}
+        <div className="hidden lg:block relative lg:order-2 min-h-full">
+          <div className="relative w-full h-full min-h-[70vh]">
             <img
               src="/assets/hero-pest-control.png"
               alt="Pest control technician treating a palm tree at a residential property"
               className="absolute inset-0 w-full h-full object-cover"
             />
-            {/* Overlay: on mobile uniform tint so text reads; on lg keep left-to-right gradient */}
-            <div className="absolute inset-0 bg-gradient-to-b from-white/85 via-white/60 to-white/40 lg:from-white lg:via-white/50 lg:to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent lg:hidden" />
+            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-transparent" />
           </div>
         </div>
       </div>
@@ -124,9 +133,9 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Trust bar — green to match logo */}
-      <div className="relative z-20 bg-primary-green text-white py-4 px-6">
-        <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-8 sm:gap-12 text-center text-sm font-semibold">
+      {/* Trust bar — green to match logo; single row on mobile like desktop */}
+      <div className="relative z-20 bg-primary-green text-white py-3 px-4 lg:py-4 lg:px-6">
+        <div className="max-w-5xl mx-auto flex flex-nowrap justify-center gap-4 sm:gap-6 lg:gap-12 text-center text-xs sm:text-sm font-semibold overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
           <span className="flex items-center gap-2">
             <svg className="w-5 h-5 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
