@@ -10,7 +10,7 @@ export default function FloatingCallButton() {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 0.8, type: 'spring', stiffness: 200 }}
       className="fixed bottom-6 right-6 z-[100]"
-      aria-label="Call now"
+      aria-label="Call Miguel"
     >
       <motion.div
         whileHover={{ scale: 1.08 }}

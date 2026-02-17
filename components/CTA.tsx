@@ -21,7 +21,7 @@ export default function CTA() {
             Ready to transform your property?
           </h2>
           <p className="text-gray-300 mt-1 text-sm sm:text-base">
-            Free estimate. Quality work. Call now.
+            Free estimate. Quality work. Call Miguel.
           </p>
         </motion.div>
         <motion.a
