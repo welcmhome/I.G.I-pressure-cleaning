@@ -36,8 +36,8 @@ export default function Hero() {
             aria-hidden
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/35 to-transparent pointer-events-none" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/78 via-black/48 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent pointer-events-none" />
         </div>
 
         {/* Content — white on mobile (tall so only ~1/3 of image visible), over background on desktop */}

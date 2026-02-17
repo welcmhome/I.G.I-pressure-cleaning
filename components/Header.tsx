@@ -171,20 +171,17 @@ export default function Header() {
             : 'bg-transparent shadow-none border-transparent'
         } ${mobileHeaderVisible ? 'translate-y-0' : '-translate-y-full'}`}
       >
-        {/* Top utility bar — service area / contact (templatable per company); mobile = green to fit vibe */}
-        <div className="bg-primary-green lg:bg-gray-800 text-white">
+        {/* Top utility bar — service area / contact (templatable); black on all breakpoints */}
+        <div className="bg-gray-900 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-2.5 lg:py-2 flex items-center justify-between gap-4 text-sm">
-            <div className="flex items-center gap-2 min-w-0">
+            <div className="flex items-center gap-2 min-w-0 flex-1 lg:flex-initial justify-center lg:justify-start">
               <svg className="w-4 h-4 flex-shrink-0 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <span className="truncate">
+              <span className="truncate text-center lg:text-left">
                 Service for <strong>{topBarConfig.serviceLabel}</strong>
               </span>
-              <svg className="w-4 h-4 flex-shrink-0 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
             </div>
             {topBarConfig.showPhone && (
               <a
