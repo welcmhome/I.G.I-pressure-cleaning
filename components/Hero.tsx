@@ -41,7 +41,7 @@ export default function Hero() {
         </div>
 
         {/* Content — white on mobile (tall so only ~1/3 of image visible), over background on desktop */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-8 xl:px-12 pt-24 sm:pt-28 lg:pt-44 pb-10 sm:pb-12 lg:pb-32 bg-white lg:bg-transparent min-h-[70vh] lg:min-h-0 flex flex-col justify-center">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:pl-5 xl:pl-8 lg:pr-8 pt-24 sm:pt-28 lg:pt-44 pb-12 sm:pb-14 lg:pb-32 bg-white lg:bg-transparent min-h-[70vh] lg:min-h-0 flex flex-col justify-start lg:justify-center">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.06 }}
-            className="font-oswald text-5xl sm:text-6xl lg:text-6xl xl:text-7xl font-bold text-gray-900 lg:text-white leading-[1.05] uppercase tracking-tight"
+            className="font-oswald text-6xl sm:text-7xl lg:text-6xl xl:text-7xl font-bold text-gray-900 lg:text-white leading-[1.05] uppercase tracking-tight"
           >
             Pests out.<br />
             <span className="inline-block overflow-hidden h-[1.05em] leading-none align-top min-w-[14ch] sm:min-w-[16ch]">
@@ -94,7 +94,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.35 }}
-            className="mt-8 flex flex-wrap items-center gap-4"
+            className="mt-auto lg:mt-8 flex flex-wrap items-center gap-4"
           >
             <a
               href="tel:9542134572"
