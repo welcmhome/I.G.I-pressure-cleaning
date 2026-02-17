@@ -28,15 +28,16 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-white">
       {/* Hero: on mobile = white + content + image below; on desktop = full-bleed background */}
       <div className="relative flex flex-col lg:min-h-[80vh] lg:flex-row lg:items-center">
-        {/* Background image — desktop only */}
-        <div className="absolute inset-0 z-0 hidden lg:block">
+        {/* Background image — desktop only; shifted right + slight zoom to show person */}
+        <div className="absolute inset-0 z-0 hidden lg:block overflow-hidden">
           <img
             src="/assets/hero-technician-truck.png"
             alt=""
             aria-hidden
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            className="absolute inset-0 w-full h-full object-cover object-right scale-105"
           />
-          <div className="absolute inset-0 bg-black/50 pointer-events-none" />
+          {/* Gradient from lower-left up (softer on the left) */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-black/50 via-black/25 to-transparent pointer-events-none" />
         </div>
 
         {/* Content — white on mobile (tall so only ~1/3 of image visible), over background on desktop */}
