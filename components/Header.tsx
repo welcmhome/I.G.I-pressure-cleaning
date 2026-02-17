@@ -213,7 +213,7 @@ export default function Header() {
               ))}
               <a
                 href="tel:9542134572"
-                className={`px-5 py-2.5 font-bold rounded-none text-sm transition-colors ${isScrolled ? 'bg-gray-900 text-white hover:bg-black' : 'bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm'}`}
+                className="px-5 py-2.5 font-bold rounded-none text-sm bg-primary-green text-white hover:bg-primary-green-dark transition-colors"
               >
                 Call Now
               </a>
