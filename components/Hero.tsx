@@ -30,7 +30,7 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-white">
       {/* Hero: on mobile = white + content + image below; on desktop = full-bleed background */}
       <div className="relative flex flex-col lg:min-h-[80vh] lg:flex-row lg:items-center">
-        {/* Background image — desktop only; shifted right + slight zoom to show person */}
+        {/* Background image - desktop only; shifted right + slight zoom to show person */}
         <div className="absolute inset-0 z-0 hidden lg:block overflow-hidden">
           <img
             src="/assets/tropical-landscape-design.jpg"
@@ -40,7 +40,7 @@ export default function Hero() {
           />
           {/* Gradient from lower-left up (softer on the left) */}
           <div className="absolute inset-0 bg-gradient-to-tr from-black/70 via-black/40 to-transparent pointer-events-none" />
-          {/* Grain overlay — desktop only */}
+          {/* Grain overlay - desktop only */}
           <div
             className="absolute inset-0 pointer-events-none opacity-[0.12] mix-blend-overlay"
             style={{
@@ -51,7 +51,7 @@ export default function Hero() {
           />
         </div>
 
-        {/* Content — white on mobile (tall so only ~1/3 of image visible), over background on desktop */}
+        {/* Content - white on mobile (tall so only ~1/3 of image visible), over background on desktop */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:pl-5 xl:pl-8 lg:pr-8 pt-40 sm:pt-44 lg:pt-44 pb-12 sm:pb-14 lg:pb-32 bg-white lg:bg-transparent min-h-[62vh] lg:min-h-0 flex flex-col justify-start lg:justify-center">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -59,8 +59,7 @@ export default function Hero() {
             transition={{ duration: 0.4 }}
             className="text-xs font-semibold text-gray-500 lg:text-gray-300 uppercase tracking-[0.2em] mb-4"
           >
-            I.G.I Pressure Cleaning
-            </span> LLC
+            I.G.I Pressure Cleaning LLC
           </motion.p>
 
           <motion.h1
@@ -126,18 +125,18 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Mobile only: image below content — modest size, with dark overlay */}
+        {/* Mobile only: image below content - modest size, with dark overlay */}
         <div className="lg:hidden relative w-full h-[40vh] min-h-[220px] flex-shrink-0 overflow-hidden">
           <img
             src="/assets/tropical-landscape-design.jpg"
-            alt="I.G.I Pressure Cleaning LLC — pressure washing and roof cleaning"
+            alt="I.G.I Pressure Cleaning LLC - pressure washing and roof cleaning"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-black/40 pointer-events-none" />
         </div>
       </div>
 
-      {/* Scrolling review bar — back below hero */}
+      {/* Scrolling review bar - back below hero */}
       <div className="relative z-20 border-t border-gray-100 bg-gray-50/80 py-2 overflow-hidden">
         <div className="flex w-max animate-marquee">
           {[...heroReviewSnippets, ...heroReviewSnippets].map((r, i) => (
@@ -153,14 +152,14 @@ export default function Hero() {
                 {r.quote}
               </span>
               <span className="text-gray-400 text-xs whitespace-nowrap">
-                — {r.name}, {r.location}
+                - {r.name}, {r.location}
               </span>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Trust bar — turquoise gradient */}
+      {/* Trust bar - turquoise gradient */}
       <div className="relative z-20 bg-gradient-to-r from-primary-blue to-primary-blue-light text-white py-3 px-4 lg:py-4 lg:px-6">
         <div className="max-w-5xl mx-auto flex flex-nowrap justify-center gap-4 sm:gap-6 lg:gap-12 text-center text-xs sm:text-sm font-semibold overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
           <span className="flex items-center gap-2">
