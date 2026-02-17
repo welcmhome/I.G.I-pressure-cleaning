@@ -37,5 +37,6 @@ export default function Home() {
       >
         Get a quote
       </a>
+    </main>
   )
 }
