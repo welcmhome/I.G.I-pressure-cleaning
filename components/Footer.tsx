@@ -3,15 +3,15 @@
 import { motion } from 'framer-motion'
 
 const cities = [
-  'Boynton Beach',
   'Delray Beach',
+  'Boynton Beach',
   'Boca Raton',
   'Lake Worth',
   'West Palm Beach',
+  'Islamorada',
   'Palm Beach Gardens',
   'Wellington',
   'Jupiter',
-  'Greenacres',
 ]
 
 export default function Footer() {
@@ -20,9 +20,9 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
           <div>
-            <h3 className="text-xl font-extrabold mb-4 text-white uppercase tracking-wide">Boynton Beach Landscaping LLC</h3>
+            <h3 className="text-xl font-extrabold mb-4 text-white uppercase tracking-wide">I.G.I Pressure Cleaning LLC</h3>
             <p className="text-gray-400 text-sm leading-relaxed font-medium">
-              Quality landscaping & gardening. Boynton Beach & South Florida.
+              House, commercial & roof pressure cleaning. Delray Beach & South Florida.
             </p>
           </div>
 
@@ -30,13 +30,13 @@ export default function Footer() {
             <h4 className="text-sm font-bold mb-4 text-white uppercase tracking-widest">Contact</h4>
             <ul className="space-y-2 text-gray-400 text-sm font-medium">
               <li>
-                <a href="tel:5611234567" className="hover:text-white transition-colors">
-                  (561) 123-4567
+                <a href="tel:5613778663" className="hover:text-white transition-colors">
+                  (561) 377-8663
                 </a>
               </li>
               <li>
-                <a href="mailto:info@boyntonbeachlandscaping.com" className="hover:text-white transition-colors">
-                  info@boyntonbeachlandscaping.com
+                <a href="mailto:info@igipressurecleaning.com" className="hover:text-white transition-colors">
+                  info@igipressurecleaning.com
                 </a>
               </li>
             </ul>
@@ -56,7 +56,7 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-bold mb-4 text-white uppercase tracking-widest">Follow Us</h4>
             <a
-              href="https://www.facebook.com/p/Boynton-Beach-Landscaping-LLC-100069301104412"
+              href="https://www.facebook.com/people/IGI-Pressure-Cleaning-llc/100068313952530/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm font-medium"
@@ -71,7 +71,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-8 mt-8">
           <p className="text-center text-gray-500 text-sm font-medium">
-            © {new Date().getFullYear()} Boynton Beach Landscaping LLC. All rights reserved.
+            © {new Date().getFullYear()} I.G.I Pressure Cleaning LLC. All rights reserved.
           </p>
         </div>
       </div>

@@ -5,8 +5,8 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 
 const features = [
-  { title: '20+ Years Experience', description: 'Built an excellent reputation for client satisfaction.', color: 'blue' },
-  { title: 'Free Estimates', description: 'No obligation. We give honest, competitive quotes.', color: 'orange' },
+  { title: 'Licensed & Insured', description: 'Professional, reliable service you can trust.', color: 'blue' },
+  { title: 'Free Estimates', description: 'No obligation. Honest, competitive quotes.', color: 'orange' },
   { title: 'Residential & Commercial', description: 'Homes, offices, and everything in between.', color: 'yellow' },
   { title: 'Attention to Detail', description: 'We treat your property as if it were our own.', color: 'blue' },
 ]
@@ -59,8 +59,8 @@ export default function WhyChooseUs() {
             className="relative aspect-[4/3] rounded-none overflow-hidden border-2 border-gray-900/20"
           >
             <img
-              src="/assets/2023-05-18.webp"
-              alt="Boynton Beach Landscaping LLC — quality landscaping and gardening"
+              src="/assets/why-choose-us.webp"
+              alt="I.G.I Pressure Cleaning LLC — pressure washing and roof cleaning"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -69,15 +69,15 @@ export default function WhyChooseUs() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-gray-900 font-semibold text-sm uppercase tracking-wider mb-2">Why Boynton Beach Landscaping</p>
+            <p className="text-gray-900 font-semibold text-sm uppercase tracking-wider mb-2">Why I.G.I Pressure Cleaning</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
               Quality work and lasting relationships
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              We value honesty and integrity. Safety and efficiency are among our top priorities, guaranteeing a great project from start to finish. We strive to build lasting relationships and guarantee your satisfaction.
+              We value honesty and integrity. Safety and efficiency are our top priorities, so every job is done right from start to finish. We build lasting relationships and guarantee your satisfaction.
             </p>
             <a
-              href="tel:5611234567"
+              href="tel:5613778663"
               className="w-full max-w-2xl mx-auto lg:mx-0 lg:max-w-none lg:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 lg:px-6 lg:py-3 bg-gray-900 text-white font-bold rounded-none text-lg lg:text-base hover:bg-black transition-colors"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -15,12 +15,12 @@ const oswald = Oswald({
 })
 
 export const metadata: Metadata = {
-  title: 'Boynton Beach Landscaping LLC | Quality Landscaping & Gardening',
-  description: 'Over 20 years of experience. Free estimates, high-quality work, and competitive pricing. Serving Boynton Beach and South Florida.',
-  keywords: 'landscaping, Boynton Beach, South Florida, gardening, lawn care, landscape design, yard maintenance',
+  title: 'I.G.I Pressure Cleaning LLC | House, Commercial & Roof Cleaning | Delray Beach',
+  description: 'House pressure washing, commercial pressure washing, and roof cleaning. Free estimates. Serving Delray Beach, Islamorada, and South Florida.',
+  keywords: 'pressure washing, pressure cleaning, Delray Beach, South Florida, roof cleaning, house washing, commercial pressure washing, Islamorada',
   icons: {
-    icon: '/assets/BOYNTON%20BEACH%20LANDSCAPING%20LOGO.PNG',
-    apple: '/assets/BOYNTON%20BEACH%20LANDSCAPING%20LOGO.PNG',
+    icon: '/assets/I.G.I%20LOGO.PNG',
+    apple: '/assets/I.G.I%20LOGO.PNG',
   },
 }
 

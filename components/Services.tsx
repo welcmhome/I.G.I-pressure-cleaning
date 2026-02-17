@@ -5,43 +5,43 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 
 const localImages = [
-  '/assets/2023-06-29.webp',   // Landscaping Design & Installation
-  '/assets/2023-09-12.webp',   // Lawn Care & Maintenance
-  '/assets/97f7ddda-1ff6-4793-b6ef-0a69ce7da30b.webp',   // Garden & Planting
-  '/assets/a71bdc31-bdfe-45bc-a0cb-3832f167f1fb.webp',   // Tree & Shrub Care
-  '/assets/aba95107-48fb-4f6a-a46e-2ac9b525c128.webp',   // Irrigation & Watering
-  '/assets/d5264d87-e33a-417a-b0f2-7ac95d107cc9.webp',   // Commercial Landscaping
+  '/assets/service-house.webp',
+  '/assets/service-commercial.webp',
+  '/assets/service-roof.webp',
+  '/assets/service-driveway.webp',
+  '/assets/service-deck.webp',
+  '/assets/service-concrete.webp',
 ]
 
 const services = [
   {
-    name: 'Landscaping Design & Installation',
-    description: 'Full landscape design and installation. We transform your property with quality plants, hardscape, and attention to detail.',
+    name: 'House Pressure Washing',
+    description: 'Remove dirt, mold, algae, and stains from siding, windows, and exterior surfaces. Enhance curb appeal and protect your home.',
     image: localImages[0],
   },
   {
-    name: 'Lawn Care & Maintenance',
-    description: 'Regular mowing, edging, and upkeep to keep your lawn healthy and looking its best year-round.',
+    name: 'Commercial Pressure Washing',
+    description: 'Storefronts, offices, and business properties. Professional results that make a strong first impression.',
     image: localImages[1],
   },
   {
-    name: 'Garden & Planting',
-    description: 'Professional planting, mulching, and garden beds. We treat your property as if it were our own.',
+    name: 'Roof Cleaning',
+    description: 'Safe, effective roof cleaning to remove black streaks, algae, and moss. Extend the life of your roof.',
     image: localImages[2],
   },
   {
-    name: 'Tree & Shrub Care',
-    description: 'Trimming, pruning, and care for trees and shrubs. Safety and efficiency are our top priorities.',
+    name: 'Driveway & Walkway Cleaning',
+    description: 'Concrete, pavers, and stone. Restore clean, like-new surfaces and improve safety.',
     image: localImages[3],
   },
   {
-    name: 'Irrigation & Watering',
-    description: 'Efficient irrigation design and repair so your landscape stays healthy with minimal waste.',
+    name: 'Deck & Patio Cleaning',
+    description: 'Wood and composite decks, patios, and outdoor living areas. Gentle yet thorough cleaning.',
     image: localImages[4],
   },
   {
-    name: 'Commercial Landscaping',
-    description: 'Commercial properties, HOAs, and businesses. We deliver consistent quality and lasting results.',
+    name: 'Concrete & Pavers',
+    description: 'Driveways, pool decks, and hardscape. We remove oil stains, rust, and years of buildup.',
     image: localImages[5],
   },
 ]
@@ -68,7 +68,7 @@ export default function Services() {
             transition={{ duration: 0.5 }}
             className="text-3xl sm:text-4xl font-bold text-gray-900 mt-1"
           >
-            Landscaping & gardening services
+            Pressure cleaning services
           </motion.h2>
         </div>
 

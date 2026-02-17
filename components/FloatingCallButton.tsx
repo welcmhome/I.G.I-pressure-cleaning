@@ -5,12 +5,12 @@ import { motion } from 'framer-motion'
 export default function FloatingCallButton() {
   return (
     <motion.a
-      href="tel:9542134572"
+      href="tel:5613778663"
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 0.8, type: 'spring', stiffness: 200 }}
       className="fixed bottom-6 right-6 z-[100]"
-      aria-label="Call Miguel"
+      aria-label="Call I.G.I Pressure Cleaning"
     >
       <motion.div
         whileHover={{ scale: 1.08 }}

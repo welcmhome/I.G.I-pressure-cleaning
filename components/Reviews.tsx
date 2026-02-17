@@ -7,31 +7,31 @@ import { useRef } from 'react'
 const reviews = [
   {
     name: 'Maria R.',
-    location: 'Boynton Beach',
+    location: 'Delray Beach',
     rating: 5,
     date: '2 weeks ago',
-    text: 'Best landscaping company in the area. Quality work, great attention to detail, and competitive pricing. They treated our property as if it were their own. Highly recommend.',
+    text: 'Best pressure cleaning in the area. Our house and roof look brand new. Quality work, great attention to detail, and fair pricing. Highly recommend.',
   },
   {
     name: 'James T.',
-    location: 'Delray Beach',
+    location: 'Boynton Beach',
     rating: 5,
     date: '1 month ago',
-    text: 'Over 20 years of experience really shows. Our yard has never looked better. Free estimate, honest quote, and the crew was efficient and professional from start to finish.',
+    text: 'Professional and on time. Free estimate, honest quote. Did our driveway and siding—everything looks amazing. Will use again.',
   },
   {
     name: 'Sandra L.',
     location: 'Boca Raton',
     rating: 5,
     date: '3 weeks ago',
-    text: 'We got a free estimate and were impressed by the attention to detail. They built a lasting relationship with us and guaranteed our satisfaction. Will use again.',
+    text: 'Got a free estimate and was impressed. They did our roof and house. Treated our property with care. Guaranteed our satisfaction. Will use again.',
   },
   {
     name: 'David M.',
     location: 'Lake Worth',
     rating: 5,
     date: '1 month ago',
-    text: 'Honest, professional, and efficient. Safety was clearly a priority. Great project from start to finish. Best gardening company we have used in South Florida.',
+    text: 'Honest, professional, and efficient. Commercial job done right. Best pressure cleaning company we have used in South Florida.',
   },
 ]
 
@@ -123,7 +123,7 @@ export default function Reviews() {
           className="text-center mt-10"
         >
           <a
-            href="https://www.google.com/search?q=Boynton+Beach+Landscaping+Reviews"
+            href="https://www.google.com/search?q=I.G.I+Pressure+Cleaning+LLC+Reviews"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-gray-600 hover:text-primary-blue font-medium text-sm transition-colors"

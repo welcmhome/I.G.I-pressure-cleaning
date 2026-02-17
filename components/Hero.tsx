@@ -10,10 +10,10 @@ const ROTATING_PHRASES = [
 ]
 
 const heroReviewSnippets = [
-  { name: 'Maria R.', location: 'Boynton Beach', quote: 'Best landscaping company in the area. Quality work and fair pricing.' },
-  { name: 'James T.', location: 'Delray Beach', quote: 'Over 20 years of experience shows. Our yard has never looked better.' },
-  { name: 'Sandra L.', location: 'Boca Raton', quote: 'Free estimate, great attention to detail. Treated our property like their own.' },
-  { name: 'David M.', location: 'Lake Worth', quote: 'Honest, efficient, and built a lasting relationship. Highly recommend.' },
+  { name: 'Maria R.', location: 'Delray Beach', quote: 'Best pressure cleaning in the area. Our house and roof look brand new.' },
+  { name: 'James T.', location: 'Boynton Beach', quote: 'Professional, on time, and fair pricing. Highly recommend.' },
+  { name: 'Sandra L.', location: 'Boca Raton', quote: 'Free estimate and great attention to detail. Driveway and siding spotless.' },
+  { name: 'David M.', location: 'Lake Worth', quote: 'Honest and efficient. Commercial job done right. Will use again.' },
 ]
 
 export default function Hero() {
@@ -59,7 +59,8 @@ export default function Hero() {
             transition={{ duration: 0.4 }}
             className="text-xs font-semibold text-gray-500 lg:text-gray-300 uppercase tracking-[0.2em] mb-4"
           >
-            Boynton Beach Landscaping LLC
+            I.G.I Pressure Cleaning
+            </span> LLC
           </motion.p>
 
           <motion.h1
@@ -68,7 +69,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.06 }}
             className="font-oswald text-6xl sm:text-7xl lg:text-6xl xl:text-7xl font-bold text-gray-900 lg:text-white leading-[1.05] uppercase tracking-tight"
           >
-            Landscaping<br />
+            Pressure Cleaning<br />
             <span className="inline-block overflow-hidden h-[1.05em] leading-none align-top min-w-[14ch] sm:min-w-[16ch]">
               <AnimatePresence mode="wait">
                 <motion.span
@@ -98,7 +99,7 @@ export default function Hero() {
             transition={{ duration: 0.4, delay: 0.25 }}
             className="hidden lg:block mt-6 text-base sm:text-lg text-gray-600 lg:text-gray-300 max-w-sm"
           >
-            Over 20 years of experience. Free estimates, quality work, and competitive pricing.
+            Free estimates. House, commercial & roof cleaning. Delray Beach & South Florida.
           </motion.p>
 
           <motion.div
@@ -108,13 +109,13 @@ export default function Hero() {
             className="mt-auto lg:mt-8 flex flex-wrap items-center gap-4"
           >
             <a
-              href="tel:5611234567"
+              href="tel:5613778663"
               className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gray-900 lg:bg-white lg:text-gray-900 text-white font-bold rounded-none text-base hover:bg-black lg:hover:bg-gray-100 transition-colors"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              Call Miguel
+              Call for a quote
             </a>
             <a
               href="#services"
@@ -129,7 +130,7 @@ export default function Hero() {
         <div className="lg:hidden relative w-full h-[40vh] min-h-[220px] flex-shrink-0 overflow-hidden">
           <img
             src="/assets/tropical-landscape-design.jpg"
-            alt="Boynton Beach Landscaping LLC — quality landscaping and gardening"
+            alt="I.G.I Pressure Cleaning LLC — pressure washing and roof cleaning"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-black/40 pointer-events-none" />
@@ -169,7 +170,7 @@ export default function Hero() {
             Licensed & Insured
           </span>
           <span>Free estimates</span>
-          <span>20+ years experience</span>
+          <span>Roof & house cleaning</span>
           <span>Residential & Commercial</span>
           <span className="font-bold">5.0 Google</span>
         </div>
