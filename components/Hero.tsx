@@ -26,24 +26,22 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-white">
-      {/* Full-bleed hero background */}
-      <div className="relative min-h-[60vh] lg:min-h-[72vh] flex items-center">
-        {/* Background image — covers entire hero */}
-        <div className="absolute inset-0 z-0">
+      {/* Hero: on mobile = white + content + image below; on desktop = full-bleed background */}
+      <div className="relative flex flex-col lg:min-h-[72vh] lg:flex-row lg:items-center">
+        {/* Background image — desktop only */}
+        <div className="absolute inset-0 z-0 hidden lg:block">
           <img
             src="/assets/IMAGE%204.JPG"
             alt=""
             aria-hidden
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
-          {/* Overlay: readable text on left, image shows through on right */}
           <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/75 to-transparent" />
-          {/* Subtle top tint so transparent header has contrast */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/25 to-transparent pointer-events-none" />
         </div>
 
-        {/* Content — same structure, over the background */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:pl-16 xl:pl-24 lg:pr-12 pt-24 sm:pt-28 lg:pt-24 pb-14 sm:pb-16 lg:pb-24">
+        {/* Content — white on mobile, over background on desktop */}
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:pl-16 xl:pl-24 lg:pr-12 pt-24 sm:pt-28 lg:pt-24 pb-10 sm:pb-12 lg:pb-24 bg-white lg:bg-transparent">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -114,6 +112,15 @@ export default function Hero() {
               Our services →
             </a>
           </motion.div>
+        </div>
+
+        {/* Mobile only: image below content — full width, mod height, no border */}
+        <div className="lg:hidden relative w-full h-[42vh] min-h-[260px] flex-shrink-0 overflow-hidden">
+          <img
+            src="/assets/IMAGE%204.JPG"
+            alt="Pest control technician at residential property"
+            className="w-full h-full object-cover object-center"
+          />
         </div>
       </div>
 
